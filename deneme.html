@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>neolabs index</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .genel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cdnler {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+
+      width: 75%;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .col-12 {
+      text-align: center;
+    }
+
+    .linkk {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-radius: 7px;
+      margin-top: 10px;
+      background-color: rgba(221, 221, 221, 0.327);
+      font-size: 18px;
+      font-weight: 800;
+      border: 0.3px solid rgba(203, 203, 203, 0.323);
+      -webkit-box-shadow: -2px 4px 9px 0px rgba(228, 225, 228, 0.49);
+      -moz-box-shadow: -2px 4px 9px 0px rgba(208, 205, 208, 0.472);
+      box-shadow: -2px 4px 9px 0px rgba(198, 198, 198, 0.591);
+    }
+
+    .linkk-container {
+      overflow-x: auto;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 7px;
+      background-color: rgba(221, 221, 221, 0.327);
+      border: 0.3px solid rgba(203, 203, 203, 0.323);
+      -webkit-box-shadow: -2px 4px 9px 0px rgba(228, 225, 228, 0.49);
+      -moz-box-shadow: -2px 4px 9px 0px rgba(208, 205, 208, 0.472);
+      box-shadow: -2px 4px 9px 0px rgba(198, 198, 198, 0.591);
+    }
+
+    .linkk img {
+      max-height: 24px;
+    }
+    .nt {
+      color: #c6303e !important;
+    }
+    .na {
+      color: #6f42c1;
+    }
+    .s {
+      color: #084298;
+    }
+  </style>
+  <body>
+    <div class="genel">
+      <div class="cdnler">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fs-1">NEOLABS CSS CDN LINK</h1>
+            <div class="linkk-container">
+              <div class="linkk fs-3">
+                <pre><code class="html code-">&lt;<span class="nt">link</span> <span class="na">rel</span>=<span class="s">"stylesheet"<span class="na">type</span>="text/css" <span class="na">href</span>="https://cdn.jsdelivr.net/gh/memetyc/frameWorktoNeos/style.css"</span>&gt;</code> </pre>
+                <img class="fa-copy" src="./img/copy-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h1 class="fs-1">NEOLABS JS CDN LINK</h1>
+            <div class="linkk-container">
+              <div class="linkk fs-3">
+                <pre><code class="html code-">&lt;<span class="nt">script</span> <span class="na">type</span>=<span class="na">"text/javascript"</span> <span class="na">src</span>=<span class="s">"https://cdn.jsdelivr.net/gh/memetyc/frameWorktoNeos/script.js"</span>&gt;&lt;<span class="nt">/script</span>&gt;</code></pre>
+                <img class="fa-copy" src="./img/copy-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const copyButtons = document.querySelectorAll(".fa-copy");
+
+      copyButtons.forEach((copyButton) => {
+        copyButton.addEventListener("click", (e) => {
+          const editableArea = e.target.previousElementSibling;
+          const textToCopy = editableArea.innerText;
+
+          const tempInput = document.createElement("textarea");
+          tempInput.value = textToCopy;
+
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempInput);
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
