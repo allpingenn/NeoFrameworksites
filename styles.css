@@ -69,6 +69,8 @@ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.
   .nav-links li {
     margin-bottom: 5px;}
 } */
+
+
 /* Cdn Content */
 .cdn-content {
   display: flex;
@@ -139,4 +141,124 @@ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.
 }
 .s {
   color: #084298;
+}
+/* Sidebar */
+
+.slide-container {
+  width: 15%;
+}
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+.wrapper a{
+  color: whitesmoke;
+}
+#sidebar {
+  position: fixed;
+  width:inherit ;
+  color: black !important;
+  transition: all 0.3s;
+  height: 100vh;
+  overflow-y: auto;
+  height: calc(100vh); 
+}
+#sidebar::-webkit-scrollbar {
+  width: 3px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  background-color: silver !important;
+}
+.active{
+  background-color: var(--neosblue);
+}
+#sidebar ul li a {
+  text-align: left;
+  color: black;
+}
+
+#sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+#sidebar .sidebar-header img {
+ width: 100% !important;
+ max-block-size: 195px;
+}
+
+
+#sidebar .sidebar-header strong {
+  display: none;
+  font-size: 1.8em;
+}
+
+#sidebar ul.components-list {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--neosblue);
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  
+}
+
+#sidebar ul li a:hover {
+  color:var(--neosblue);
+  background: #fff;
+}
+
+.companents ul li a:hover{
+  color: var(--white)!important;
+  background-color: var(--neosblue)!important;
+transition: all 0.4s ease-in-out !important;
+}
+
+#sidebar ul li a i {
+  margin-right: 10px;
+}
+/* ICON RENK DEĞİŞMESİ*/
+.fa-book{
+  color: #711396;
+}
+
+
+
+
+
+#sidebar ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  
+}
+
+
+@media (max-width:670px) {
+  #sidebar .sidebar-header h3 {
+      text-align: center;
+      font-size: 2rem;
+      
+   }
+
+}
+/* ---------------------------------------------------
+  CONTENT STYLE
+----------------------------------------------------- */
+.content-container {
+  width: 85%;
+}
+
+#content {
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  
 }

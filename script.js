@@ -22,3 +22,6 @@ copyButtons.forEach(button => {
     alert("Bağlantı kopyalandı: " + codeContent);
   });
 });
+
+// DOCS
+

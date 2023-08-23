@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt="" class="w-100 p-5"
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../colors/index.html" class="text-black fs-6"
+                    >Color</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6">Containers</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Select</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Border</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Display</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Sizing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Position</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Spacing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../buttons/index.html" class="text-black fs-6"
+                    >Buttons</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Carousel</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Dropdowns</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+              <!-- <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-neosblue">
+                        
+                        <span><i class="fas fa-align-left"></i></span>
+                    </button>
+                
+
+                </div>
+            -->
+
+              <!-- CONTAINER ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h1>CONTAINER</h1></span>
+                <p class="fw-ligt mt-3 fs-6">
+                  Containerlar, en temel düzen öğeleridir ve varsayılan ızgara
+                  sistemi kullanılırken gereklidir.
+                </p>
+                <div class="table pt-5">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>
+                          Extra Small
+                          <div class="fw-normal">576px</div>
+                        </th>
+                        <th>
+                          Small
+                          <div class="fw-normal">≥576px</div>
+                        </th>
+                        <th>
+                          Medium
+                          <div class="fw-normal">≥768px</div>
+                        </th>
+                        <th>
+                          Large
+                          <div class="fw-normal">≥992px</div>
+                        </th>
+                        <th>
+                          X-Large
+                          <div class="fw-normal">≥1200px</div>
+                        </th>
+                        <th>
+                          XX-Large
+                          <div class="fw-normal">≥1400px</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <code>.container</code>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>540px</td>
+                        <td>720px</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>.container-sm</code>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>540px</td>
+                        <td>720px</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>.container-md</code>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>720px</td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>.container-lg</code>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>960px</td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>.container-xl</code>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>1140px</td>
+                        <td>1320px</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>.container-xxl</code>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>1320px</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>.container-fluid</code>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                        <td>
+                          <span class="text-hot">100%</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      #Varsayılan Container
+                    </p>
+                    <p class="fw-ligt fs-6 pb-3">
+                      Varsayılan
+                      <span class="text-hot">.container</span> sınıfımız
+                      duyarlı, sabit genişlikli bir kapsayıcıdır, yani her kesme
+                      noktasında maksimum genişliği değişir.
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2 px-4">
+                            <code>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container"</span><span class="mark">&gt;</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp; < -- içerik -- ><br><br><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CONTAINER-FLUID ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      #Fluid Container
+                    </p>
+                    <p class="fw-ligt fs-6 pb-3">
+                      Varsayılan Görünüm alanının tüm genişliğini kapsayan tam
+                      genişlikte
+                      <span class="text-hot">.container-fluid</span>
+                      bir kap için kullanın.
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2 px-4">
+                            <code>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-fluid"</span><span class="mark">&gt;</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp; < -- içerik -- ><br><br><span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- RESPONSIVE CONTAINER ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      #Fluid Container
+                    </p>
+                    <p class="fw-ligt fs-6 pb-3">
+                      Duyarlı kapsayıcılar, belirtilen kesme noktasına ulaşılana
+                      kadar %100 genişliğinde bir sınıf belirtmenize olanak
+                      tanır, ardından daha yüksek kesme noktalarının her biri
+                      için maksimum genişlikler uygularız.
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2 px-4">
+                            <code>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-sm"</span><span class="mark">&gt;</span>küçük kesme noktasına kadar 100% genişlik<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-md"</span><span class="mark">&gt;</span>orta kesme noktasına kadar 100% genişlik<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-lg"</span><span class="mark">&gt;</span>büyük kesme noktasına kadar 100% genişlik<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-xl"</span><span class="mark">&gt;</span>ekstra kesme noktasına kadar 100% genişlik<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-xxl"</span><span class="mark">&gt;</span>ekstra ekstra kesme noktasına kadar 100% genişlik<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>

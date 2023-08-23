@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt="" class="w-100 p-5"
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6">Color</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../containers/index.html" class="text-black fs-6"
+                    >Containers</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Select</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Border</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Display</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Sizing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Position</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Spacing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6">Buttons</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Carousel</a>
+                </li>
+                <li class="pb-3">
+                  <a href="" class="text-black fs-6">Dropdowns</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+              <!-- <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-neosblue">
+                        
+                        <span><i class="fas fa-align-left"></i></span>
+                    </button>
+                
+
+                </div>
+            -->
+
+              <!-- BUTTON ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h1>BUTTONS</h1></span>
+                <p class="fw-ligt mt-3 fs-6">
+                  Formlardaki, iletişim kutularındaki ve daha fazlasındaki
+                  eylemler için Neo{Labs} tarafından sağlanan özel buton
+                  stillerini kullanılabilmektedir. Bu stiller çeşitli buton
+                  boyutlarını ve durumlarını destekler.Burada da özellik
+                  sağlanmış button tasarımları verilmektedir.
+                </p>
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      #Buton Çeşitleri
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <button class="btn btn-black m-2">btn-black</button>
+                      <button class="btn btn-green m-2">btn-green</button>
+                      <button class="btn btn-hot m-2">btn-hot</button>
+                      <button class="btn btn-neosblue m-2">btn-neosblue</button>
+                      <button class="btn btn-softorange m-2">
+                        btn-softorange
+                      </button>
+                      <button class="btn btn-yellow m-2">btn-yellow</button>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-black"</span><span class="mark">&gt;</span>btn-black<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-green"</span><span class="mark">&gt;</span>btn-green<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-hot"</span><span class="mark">&gt;</span>btn-hot<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark">&gt;</span>btn-neosblue<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-softorange"</span><span class="mark">&gt;</span>btn-softorange<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-yellow"</span><span class="mark">&gt;</span>btn-yellow<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BUTTON-OUTLINE özellikleri -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      #Button-Outline
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <button class="btn btn-outline-black m-2">
+                        outline-black
+                      </button>
+                      <button class="btn btn-outline-green m-2">
+                        outline-green
+                      </button>
+                      <button class="btn btn-outline-neosblue m-2">
+                        outline-neosblue
+                      </button>
+                      <button class="btn btn-outline-softorange m-2">
+                        outline-softorange
+                      </button>
+                      <button class="btn btn-outline-yellow m-2">
+                        outline-yellow
+                      </button>
+                      <button class="btn btn-outline-hot m-2">
+                        outline-hot
+                      </button>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-outline-black"</span><span class="mark">&gt;</span>outline-black<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-outline-green"</span><span class="mark">&gt;</span>outline-green<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-outline-neosblue"</span><span class="mark">&gt;</span>outline-neosblue<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-outline-softorange"</span><span class="mark">&gt;</span>outline-softorange<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-outline-yellow"</span><span class="mark">&gt;</span>outline-yellow<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-outline-hot"</span><span class="mark">&gt;</span>outline-hot<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span> 
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- BUTTON HOVER ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h2>BUTTONS HOVER</h2></span>
+                <p class="fw-ligt mt-3 fs-6">
+                  Formlardaki iletişim kutularında verilen button özelliklerini
+                  daha tasarımsal olması için
+                  <strong>Neo{Labs}</strong> tarafından özelleştirilmiştir.
+                </p>
+                <p class="fw-ligt mt-3 fs-6">
+                  Formlardaki iletişim kutularında yapılan bir diğer değişiklik
+                  ise hover renklerini Neo{Labs} tarafında kolayca özellik
+                  verilmesi sağlanmıştır. Hover özelliğini hover-{color} yazarak
+                  Neo{Labs} oluşturuğu ana renkler yardımı ile tasarımı
+                  kolaylaştırmaktır.
+                </p>
+                <div class="main-item pt-5">
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div class="d-grid m-auto col-3">
+                        <button class="btn btn-hover">btn-hover</button>
+                      </div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-black"</span><span class="mark">&gt;</span>btn-black<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-green"</span><span class="mark">&gt;</span>btn-green<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-hot"</span><span class="mark">&gt;</span>btn-hot<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark">&gt;</span>btn-neosblue<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-softorange"</span><span class="mark">&gt;</span>btn-softorange<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-yellow"</span><span class="mark">&gt;</span>btn-yellow<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>
