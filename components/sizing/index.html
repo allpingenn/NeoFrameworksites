@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a class="logo-sidebar" href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt=""
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../colors/index.html" class="text-black fs-6"
+                    >Color</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../containers/index.html" class="text-black fs-6"
+                    >Containers</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../select/index.html" class="text-black fs-6"
+                    >Select</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Checks-radios/index.html" class="text-black fs-6"
+                    >Check & Radios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../border/index.html" class="text-black fs-6"
+                    >Border</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../display/index.html" class="text-black fs-6"
+                    >Display</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6">Sizing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../position/index.html" class="text-black fs-6"
+                    >Position</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../spacing/index.html" class="text-black fs-6"
+                    >Spacing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Text/index.html" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../buttons/index.html" class="text-black fs-6"
+                    >Buttons</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../card/index.html" class="text-black fs-6">Card</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Carousel/index.html" class="text-black fs-6"
+                    >Carousel</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Dropdown/index.html" class="text-black fs-6"
+                    >Dropdowns</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+              <!-- Widht ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h1>Sizing</h1></span>
+                <p class="fw-ligt mt-3 fs-6">
+                  CSS'deki "width" ve "height" özellikleri, bir öğenin boyutunu
+                  kolayca ayarlamamızı sağlayan yardımcı programlardır. Bu
+                  sayede, bir resim, div, p, header veya footer gibi HTML
+                  öğelerinin genişlik ve yükseklik değerlerini belirleyebilir,
+                  sayfa düzenini ve içeriğini düzenlemede kullanabiliriz. Burada
+                  bu ögeleri kullanarak istediğimiz boyutları oluşturabiliriz.
+                </p>
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Width</p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div class="w-20 p-3 bg-neosblue border-1">w-20</div>
+                      <div class="w-52 p-3 bg-neosblue border-1">w-52</div>
+                      <div class="w-78 p-3 bg-neosblue border-1">w-78</div>
+                      <div class="w-82 p-3 bg-neosblue border-1">w-82</div>
+                      <div class="w-95 p-3 bg-neosblue border-1">w-95</div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"w-20"</span><span class="mark">&gt;</span>w-20<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"w-52"</span><span class="mark">&gt;</span>w-52<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"w-78"</span><span class="mark">&gt;</span>w-78<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"w-82"</span><span class="mark">&gt;</span>w-82<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"w-95"</span><span class="mark">&gt;</span>w-95<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Height özellikleri -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Height</p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div style="height: 15rem">
+                        <div
+                          class="h-20 d-inline-block bg-neosblue"
+                          style="width: 15rem"
+                        >
+                          h-20
+                        </div>
+                        <div
+                          class="h-48 d-inline-block bg-neosblue"
+                          style="width: 15rem"
+                        >
+                          h-48
+                        </div>
+                        <div
+                          class="h-62 d-inline-block bg-neosblue"
+                          style="width: 15rem"
+                        >
+                          h-62
+                        </div>
+                        <div
+                          class="h-84 d-inline-block bg-neosblue"
+                          style="width: 15rem"
+                        >
+                          h-84
+                        </div>
+                        <div
+                          class="h-97 d-inline-block bg-neosblue"
+                          style="width: 15rem"
+                        >
+                          h-97
+                        </div>
+                      </div>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"h-20"</span><span class="mark">&gt;</span>h-20<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span> 
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"h-48"</span><span class="mark">&gt;</span>h-48<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"h-62"</span><span class="mark">&gt;</span>h-62<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"h-84"</span><span class="mark">&gt;</span>h-84<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"h-97"</span><span class="mark">&gt;</span>h-97<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>

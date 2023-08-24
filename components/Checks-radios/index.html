@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checks & radios</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt="" class="w-100 p-5"
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../colors/index.html" class="text-black fs-6">Color</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../containers/index.html" class="text-black fs-6"
+                    >Containers</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../select/index.html" class="text-black fs-6">Select</a>
+                </li>
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6"
+                    >Check & Radios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../border/index.html" class="text-black fs-6">Border</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../display/index.html" class="text-black fs-6">Display</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../sizing/index.html" class="text-black fs-6">Sizing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../position/index.html" class="text-black fs-6">Position</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../spacing/index.html" class="text-black fs-6">Spacing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Text/index.html" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../buttons/index.html" class="text-black fs-6"
+                    >Buttons</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Carousel/index.html" class="text-black fs-6">Carousel</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Dropdown/index.html" class="text-black fs-6">Dropdowns</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+
+              <!-- Engellenmiş radio -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h1>Checks & Radios</h1></span>
+                <p class="fw-ligt mt-3 fs-6 mb-4">
+Hizalamayı, kaydırmayı, tasarlamayı ve daha fazlasını kontrol etmek için ortak metin programlarında kullanbilecek belgeler ve örnekler içermektedir.
+                </p>
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Engellenmiş Radio</p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div class="radio"> 
+                          <input id="radio-1" name="radio" type="radio" checked> 
+                          <label for="radio-1" class="radio-label">Checked</label>
+                      </div> 
+                      <div class="radio"> 
+                          <input id="radio-2" name="radio" type="radio"> 
+                          <label for="radio-2" class="radio-label">Unchecked</label>
+                      </div> 
+                      <div class="radio"> 
+                          <input id="radio-3" name="radio" type="radio" disable> 
+                          <label for="radio-3" class="radio-label">Disabled</label>
+                      </div> 
+
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"radio"</span><span class="mark">&gt;</span><span class="mark">
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"radio-1"</span><span class="mark"></span><span class="mark"></span><span class="ticket"> name=</span><span class="attr">"radio"</span><span class="mark"><span class="ticket"> type=</span><span class="attr">"radio"</span><span class="mark"></span>&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"radio-1"</span><span class="mark"></span><span class="mark"></span><span class="ticket"> class=</span><span class="attr">"radio-label"</span><span class="mark">&gt;
+&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<br>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"radio"</span><span class="mark">&gt;</span><span class="mark">
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"radio-2"</span><span class="mark"></span><span class="mark"></span><span class="ticket"> name=</span><span class="attr">"radio"</span><span class="mark"><span class="ticket"> type=</span><span class="attr">"radio"</span><span class="mark"></span>&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"radio-2"</span><span class="mark"></span><span class="mark"></span><span class="ticket"> class=</span><span class="attr">"radio-label"</span><span class="mark">&gt;
+&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<br>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"radio"</span><span class="mark">&gt;</span><span class="mark">
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"radio-3"</span><span class="mark"></span><span class="mark"></span><span class="ticket"> name=</span><span class="attr">"radio"</span><span class="mark"><span class="ticket"> type=</span><span class="attr">"radio"</span><span class="mark"></span>&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"radio-3"</span><span class="mark"></span><span class="mark"></span><span class="ticket"> class=</span><span class="attr">"radio-label"</span><span class="mark">&gt;
+&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Radio -->
+              <div class="main">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Radio</p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div class="box"> 
+                          <input id="two" type="checkbox"> 
+                          <span class="check"></span>
+                          <label for="two" class="box-label">Hey! Check me.</label>
+                      </div> 
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"box"</span><span class="mark">&gt;</span><span class="mark">
+    <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"two"</span><span class="mark"></span><span class="mark"></span><span class="ticket"><span class="ticket"> type=</span><span class="attr">"checkbox"</span><span class="mark"></span>&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">span class=</span><span class="attr">"check"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;&lt;</span><span class="mark">/</span><span class="ticket">span</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"two"</span><span class="ticket"> class=</span><span class="attr">"box-label"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;<span class="mark">Hey Check me.</span>&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- check 1 -->
+              <div class="main">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Checkbox-1</p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+<div class="item"> 
+    <div class="toggle-pill-bw">
+       <input id="pill2" type="checkbox" name="check"> 
+       <label class="checkbox-text" for="pill2"></label>
+    </div>
+</div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"item"</span><span class="mark">&gt;</span><span class="mark">
+      <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"toggle-pill-bw"</span><span class="mark"></span><span class="mark"></span><span class="mark"></span>&gt;</span>
+          <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"pill2"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;&lt;</span><span class="mark">/</span><span class="ticket">span</span><span class="mark">&gt;</span>
+          <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"pill2"</span><span class="ticket"> class=</span><span class="attr">"checkbox-text"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+      &lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- check 2 -->
+              <div class="main">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Checkbox-2</p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                        <section title=".slideOne"> 
+                                <div class="slideOne">
+                                    <input type="checkbox" value="None" id="slideThree" name="check" checked>
+                                    <label class="text-checkbox" for="slideThree"></label> 
+                                </div>
+                        </section>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">section title=</span><span class="attr">".slideOne"</span><span class="mark">&gt;
+      <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"slideOne"</span><span class="mark"></span><span class="mark"></span><span class="mark"></span>&gt;</span>
+          <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"slideThree"</span><span class="ticket"> value=</span><span class="attr">"None"</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span><span class="mark"></span><span class="ticket"> name=</span><span class="attr">"check"</span><span class="mark"></span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;</span>
+          <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"slideThree"</span><span class="ticket"> class=</span><span class="attr">"text-checkbox"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+      &lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&lt;</span><span class="mark">/</span><span class="ticket">section</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- check 3 -->
+              <div class="main">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Checkbox-3</p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                        <input class="checkbox-input" id="switch" type="checkbox" > 
+                        <label class="toggle-label" for="switch">Toggle</label>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"switch"</span><span class="ticket"> class=</span><span class="attr">"checkbox-input"</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span><span class="mark"></span><span class="mark"></span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"switch"</span><span class="ticket"> class=</span><span class="attr">"toggle-label"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- check 4 -->
+              <div class="main">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">#Checkbox-4</p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                        <div class="switch"> 
+                            <input id="one" class="switcher" type="checkbox" > 
+                            <label for="one" class="sliderer"></label>
+                        </div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"switch"</span><span class="mark">&gt;</span><span class="mark">
+          <span class="mark">&lt;</span><span class="ticket">input id=</span><span class="attr">"one"</span><span class="ticket">class=</span><span class="attr">"switcher"</span><span class="ticket"> type=</span><span class="attr">"checkbox"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;</span>
+          <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">"one"</span><span class="ticket"> class=</span><span class="attr">"sliderer"</span><span class="mark"></span><span class="mark"></span><span class="ticket">&gt;&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>

@@ -231,8 +231,6 @@ transition: all 0.4s ease-in-out !important;
 
 
 
-
-
 #sidebar ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
@@ -248,6 +246,7 @@ transition: all 0.4s ease-in-out !important;
    }
 
 }
+
 /* ---------------------------------------------------
   CONTENT STYLE
 ----------------------------------------------------- */

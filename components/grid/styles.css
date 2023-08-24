@@ -132,3 +132,35 @@ body{
         th {
             background-color: #f2f2f2;
         }
+        .logo-sidebar img {
+            width: 140px;
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-bottom: 5px;
+          }
+          @media screen and (max-width:900px) {
+            .container-fluid .row .col-2 { width: 200px !important;
+          
+            }
+            .container-fluid .row .col-10 {
+              width: 60%;
+              transform: translateX(150px);
+            }
+            
+          }
+          
+          @media screen and (max-width:500px) {
+            .container-fluid .row .col-2 {width: 160px !important;}
+            .container-fluid .row .col-10 {
+              transform: translateX(120px);
+            }
+            
+          }
+          
+          @media screen and (max-width:350px) {
+            .container-fluid .row .col-2 {width: 140px !important;}
+            .container-fluid .row .col-10 {
+              transform: translateX(100px);
+            }
+            
+          }

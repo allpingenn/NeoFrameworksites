@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacing</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a class="logo-sidebar" href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt=""
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../colors/index.html" class="text-black fs-6"
+                    >Color</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../containers/index.html" class="text-black fs-6"
+                    >Containers</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../select/index.html" class="text-black fs-6"
+                    >Select</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Checks-radios/index.html" class="text-black fs-6"
+                    >Check & Radios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../border/border.html" class="text-black fs-6"
+                    >Border</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../display/index.html" class="text-black fs-6"
+                    >Display</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../sizing/index.html" class="text-black fs-6"
+                    >Sizing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../position/index.html" class="text-black fs-6"
+                    >Position</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6">Spacing</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Text/index.html" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../buttons/index.html" class="text-black fs-6"
+                    >Buttons</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../card/index.html" class="text-black fs-6">Card</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Carousel/index.html" class="text-black fs-6"
+                    >Carousel</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Dropdown/index.html" class="text-black fs-6"
+                    >Dropdowns</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+              <!-- MARGİN TOP ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"
+                  ><h1>MARGIN & PADDING & GAP</h1></span
+                >
+                <p class="fw-ligt mt-3 fs-6 mb-4">
+                  CSS'de margin, bir HTML öğesinin dış kenarlarını belirlemek
+                  için kullanılan bir özelliktir. Margin, bir öğenin etrafında
+                  boşluk yaratır ve diğer öğelerle olan mesafeyi kontrol etmeyi
+                  sağlar. Burada da bir ögenin marginini kontrol etmke için
+                  özellikler yer almaktadır.
+                </p>
+
+                <p class="fw-ligt mt-3 fs-6 mb-4">
+                  Margin, m-{size} tüm kenarlar boşluk, mt-{size} yukarıdan
+                  boşluk , mb-{size} alttan boşluk, ms-{size} soldan boşluk ve
+                  me-{size} ise sağdan boşluk ile 0-5 arasındaki değerler
+                  vererek bir öğenin kenar boşluğunu belli bir taraftan kontrol
+                  etmek için kullanılabilmektedir.
+                </p>
+                <p class="mt-5 w-100 text-black fs-3 pb-4">
+                  #Margin-top Yapıları
+                </p>
+                <div class="main-item">
+                  <div class="main-title"></div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="border-genel mt-0 me-3"></div>
+                      <div class="border-genel mt-1 me-3"></div>
+                      <div class="border-genel mt-2 me-3"></div>
+                      <div class="border-genel mt-3 me-3"></div>
+                      <div class="border-genel mt-4 me-3"></div>
+                      <div class="border-genel mt-5"></div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"mt-0"</span><span class="mark">&gt;</span>mt-0<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"mt-1"</span><span class="mark">&gt;</span>mt-1<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"mt-2"</span><span class="mark">&gt;</span>mt-2<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"mt-3"</span><span class="mark">&gt;</span>mt-3<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"mt-4"</span><span class="mark">&gt;</span>mt-4<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"mt-5"</span><span class="mark">&gt;</span>mt-5<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- MARGİN RIGHT -->
+              <div class="main">
+                <p class="mt-5 w-100 text-black fs-3 pb-4">
+                  #Margin-right Yapıları
+                </p>
+                <div class="main-item">
+                  <div class="main-title"></div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="border-genel me-1"></div>
+                      <div class="border-genel me-2"></div>
+                      <div class="border-genel me-3"></div>
+                      <div class="border-genel me-4"></div>
+                      <div class="border-genel me-5"></div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"me-1"</span><span class="mark">&gt;</span>me-1<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"me-2"</span><span class="mark">&gt;</span>me-2<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"me-3"</span><span class="mark">&gt;</span>me-3<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"me-4"</span><span class="mark">&gt;</span>me-4<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"me-5"</span><span class="mark">&gt;</span>me-5<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- PADDING BOTTOM -->
+              <div class="main">
+                <p class="mt-5 w-100 text-black fs-3 pb-4">
+                  #Padding-bottom Yapıları
+                </p>
+                <div class="main-item">
+                  <div class="main-title"></div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="border-genel pt-1 me-3">pt-1</div>
+                      <div class="border-genel pt-2 me-3">pt-2</div>
+                      <div class="border-genel pt-3 me-3">pt-3</div>
+                      <div class="border-genel pt-4 me-4">pt-4</div>
+                      <div class="border-genel pt-5 me-5">pt-5</div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"pt-1"</span><span class="mark">&gt;</span>pt-1<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"pt-2"</span><span class="mark">&gt;</span>pt-2<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"pt-3"</span><span class="mark">&gt;</span>pt-3<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"pt-4"</span><span class="mark">&gt;</span>pt-4<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"pt-5"</span><span class="mark">&gt;</span>pt-5<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- GAP yapıları  -->
+              <div class="main">
+                <p class="mt-5 w-100 text-black fs-3 pb-4">#Gap Yapıları</p>
+                <div class="main-item">
+                  <div class="main-title"></div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div class="d-grid gap-2">
+                        <div class="row">
+                          <div class="col-6 p-2 bg-gray text-center">
+                            İçerik 1
+                          </div>
+                          <div class="col-6 p-2 bg-softorange text-center">
+                            İçerik 2
+                          </div>
+                          <div class="col-6 p-2 bg-neosblue text-center">
+                            İçerik 3
+                          </div>
+                          <div class="col-6 p-2 bg-yellow text-center">
+                            İçerik 4
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-grid gap-2"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"row"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"col-6 p-2 bg-gray text-center"</span><span class="mark">&gt;</span>İçerik 1<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"col-6 p-2 bg-softorange text-center"</span><span class="mark">&gt;</span>İçerik 2<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"col-6 p-2 bg-neosblue text-center"</span><span class="mark">&gt;</span>İçerik 3<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"col-6 p-2 bg-neosblue text-center"</span><span class="mark">&gt;</span>İçerik 4<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket"></span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket"></span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>

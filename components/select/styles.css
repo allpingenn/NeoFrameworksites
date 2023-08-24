@@ -1,0 +1,156 @@
+/* site cssi */
+*{
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Inter', sans-serif;
+    }
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    height: max-content;
+}
+/* ---------------------------------------------------
+            CONTENT STYLE
+        ----------------------------------------------------- */
+        .content-container {
+            width: 85%;
+            margin-left: 20%;
+        }
+
+        #content {
+            width: 100%;
+            padding: 20px;
+            min-height: 100vh;
+            transition: all 0.3s;
+            
+        }
+
+        /* ---------------------------------------------------
+            MEDIAQUERIES
+        ----------------------------------------------------- */
+
+        
+        @media (max-width: 832px) {
+            .slide-container{
+                width: 30%;
+            }
+            .content-container{
+                width: 100%;
+            }
+            #content{
+                padding: 5px;
+            }
+        
+        }
+
+
+
+
+        /* iÃ§erikkk */
+        .main{
+            padding: 1rem;
+        }
+        .main-border{
+            border: 0.2rem solid #f0f0f0 !important;
+            border-radius: 10px;
+            
+        }
+        .main-bottom{
+            padding: 1rem;
+            border-bottom: 0.2rem solid #f0f0f0 !important;
+        }
+        .main-code{
+            max-width: 100%;
+            background-color: rgb(248, 248, 248);
+            overflow: auto;
+            background: #F8F9FA;
+            color: rgba(0, 0, 0, 0.742);
+        }
+
+
+        .markup{
+            color: var(--black);
+            text-align: left;
+        }
+        .ticket{
+            color: rgba(229, 11, 36, 0.742);
+        }
+        .attr{
+            color: rgb(12, 208, 230);
+        }
+        .mark{
+            color:rgb(9, 5, 5);
+        }
+        ul a:hover {
+            background-color: #49dbfc46;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* site iÃ§erisindeki border iÃ§in */
+        .border-genel-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+        }
+        .border-genel{
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+        }
+        .view{
+            max-width: 100%;
+        }
+        /* kopyala yapÄ±ÅŸtÄ±r iÃ§in html bÃ¶lgemiz*/
+        .kapsayici{
+        display: flex;
+        flex-direction: column;
+        }
+        .main-html{
+        border-top: 1px solid #f0f0f0;
+        background-color:#F8F9FA;
+        display: flex;
+        justify-content: space-between;
+        }
+        select {
+            width: 25%;
+            height: 25px;
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .logo-sidebar img {
+            width: 140px;
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-bottom: 5px;
+          }
+          @media screen and (max-width:900px) {
+            .container-fluid .row .col-2 { width: 200px !important;
+          
+            }
+            .container-fluid .row .col-10 {
+              width: 60%;
+              transform: translateX(150px);
+            }
+            
+          }
+          
+          @media screen and (max-width:500px) {
+            .container-fluid .row .col-2 {width: 160px !important;}
+            .container-fluid .row .col-10 {
+              transform: translateX(120px);
+            }
+            
+          }
+          
+          @media screen and (max-width:350px) {
+            .container-fluid .row .col-2 {width: 140px !important;}
+            .container-fluid .row .col-10 {
+              transform: translateX(100px);
+            }
+            
+          }

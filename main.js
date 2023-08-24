@@ -177,7 +177,7 @@ selectGroup.forEach(group => {
   });
 // --- SLIDER AUTOPLAY ---
 document.addEventListener("DOMContentLoaded", function () {
-  const sliders = document.querySelectorAll(".slider-container");
+  const sliders = document.querySelectorAll(".slider-container-auto");
 
   sliders.forEach((slider) => {
     const sliderContent = slider.querySelector(".slider-content");
@@ -479,4 +479,4 @@ document.getElementById('openButton').addEventListener('click', function () {
 
   window.open(window_url.innerHTML, 'YeniPencere', 'width=1920,height=1080');
 
-});  
+}); 

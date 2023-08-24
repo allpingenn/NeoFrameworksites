@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a class="logo-sidebar" href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt=""
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../colors/index.html" class="text-black fs-6"
+                    >Color</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../containers/index.html" class="text-black fs-6"
+                    >Containers</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../select/index.html" class="text-black fs-6"
+                    >Select</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Checks-radios/index.html" class="text-black fs-6"
+                    >Check & Radios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../border/index.html" class="text-black fs-6"
+                    >Border</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6">Display</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../sizing/index.html" class="text-black fs-6"
+                    >Sizing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../position/index.html" class="text-black fs-6"
+                    >Position</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../spacing/index.html" class="text-black fs-6"
+                    >Spacing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Text/index.html" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6">Buttons</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../card/index.html" class="text-black fs-6">Card</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Carousel/index.html" class="text-black fs-6"
+                    >Carousel</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Dropdown/index.html" class="text-black fs-6"
+                    >Dropdowns</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+              <!-- DİSPLAY ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h1>DISPLAY</h1></span>
+                <p class="fw-ligt mt-3 fs-6">
+                  Ekran yardımcı programları sayesinde bileşenlerin ekran
+                  değerleri hızlı ve hassas bir şekilde değiştirilebilir. Bu
+                  yardımcı programlar, yazdırma işlemi sırasında ekran kontrolü
+                  için gerekli bazı ekstraları da içerir. Ayrıca, sık kullanılan
+                  bazı değerlerin değiştirilmesini kolaylaştıran destek
+                  sunarlar. Bu kısımda da bizlere kolaylık sağlayan display
+                  özelliklerini kolay kullanımı için kısaltmalarını görmekteyiz.
+                </p>
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">.d-flex</p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="d-flex p-2 text-white bg-black">d-flex</div>
+                      <div class="d-flex p-2 text-white bg-gray">d-flex</div>
+                      <div class="d-flex p-2 text-white bg-neosblue">
+                        d-flex
+                      </div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-flex"</span><span class="mark">&gt;</span>d-flex<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-flex"</span><span class="mark">&gt;</span>d-flex<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-flex"</span><span class="mark">&gt;</span>d-flex<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .d-inline-flex özellikleri -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      .d-inline-flex
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="d-inline-flex p-2 text-white bg-black">
+                        d-inline-flex
+                      </div>
+                      <div class="d-inline-flex p-2 text-white bg-gray">
+                        d-inline-flex
+                      </div>
+                      <div class="d-inline-flex p-2 text-white bg-neosblue">
+                        d-inline-flex
+                      </div>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline-flex"</span><span class="mark">&gt;</span>d-inline-flex<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline-flex"</span><span class="mark">&gt;</span>d-inline-flex<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline-flex"</span><span class="mark">&gt;</span>d-inline-flex<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .d-grid ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">.d-grid</p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="d-grid p-2 text-white bg-black">d-grid</div>
+                      <div class="d-grid p-2 text-white bg-gray">d-grid</div>
+                      <div class="d-grid p-2 text-white bg-neosblue">
+                        d-grid
+                      </div>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-grid"</span><span class="mark">&gt;</span>d-grid<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-grid"</span><span class="mark">&gt;</span>d-grid<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-grid"</span><span class="mark">&gt;</span>d-grid<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ..d-none ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">.d-none</p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="d-none p-2 text-white bg-black">d-none</div>
+                      <div class="d-none p-2 text-white bg-gray">d-none</div>
+                      <div class="d-none p-2 text-white bg-neosblue">
+                        d-none
+                      </div>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-none"</span><span class="mark">&gt;</span>d-none<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-none"</span><span class="mark">&gt;</span>d-none<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-none"</span><span class="mark">&gt;</span>d-none<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  d-inline ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">.d-inline</p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="d-inline p-2 text-white bg-black">
+                        d-inline
+                      </div>
+                      <div class="d-inline p-2 text-white bg-gray">
+                        d-inline
+                      </div>
+                      <div class="d-inline p-2 text-white bg-neosblue">
+                        d-inline
+                      </div>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline"</span><span class="mark">&gt;</span>d-inline<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline"</span><span class="mark">&gt;</span>d-inline<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline"</span><span class="mark">&gt;</span>d-inline<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- d-inline-block ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      .d-inline-block
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="d-inline-block p-2 text-white bg-black">
+                        d-inline-block
+                      </div>
+                      <div class="d-inline-block p-2 text-white bg-gray">
+                        d-inline-block
+                      </div>
+                      <div class="d-inline-block p-2 text-white bg-neosblue">
+                        d-inline-block
+                      </div>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline-block"</span><span class="mark">&gt;</span>d-inline-block<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline-block"</span><span class="mark">&gt;</span>d-inline-block<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-inline-block"</span><span class="mark">&gt;</span>d-inline-block<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .d-block ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">.d-block</p>
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="d-block p-2 text-white bg-black">d-block</div>
+                      <div class="d-block p-2 text-white bg-gray">d-block</div>
+                      <div class="d-block p-2 text-white bg-neosblue">
+                        d-block
+                      </div>
+                    </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                                <code>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-block"</span><span class="mark">&gt;</span>d-block<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-block"</span><span class="mark">&gt;</span>d-block<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"d-block"</span><span class="mark">&gt;</span>d-block<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+                            </code>
+                              </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>
