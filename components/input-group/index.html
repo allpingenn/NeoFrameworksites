@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input-group</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a class="logo-sidebar" href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt=""
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../colors/index.html" class="text-black fs-6"
+                    >Color</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../shadow/index.html" class="text-black fs-6"
+                    >Shadow</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../containers/index.html" class="text-black fs-6"
+                    >Containers</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../select/index.html" class="text-black fs-6"
+                    >Select</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Checks-radios/index.html" class="text-black fs-6"
+                    >Check & Radios</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a
+                    href="../register-login-form/index.html"
+                    class="text-black fs-6"
+                    >Register & Login</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="./index.html" class="text-black fs-6"
+                    >Input Groups</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../border/index.html" class="text-black fs-6">Border</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../display/index.html" class="text-black fs-6"
+                    >Display</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../sizing/index.html" class="text-black fs-6"
+                    >Sizing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../sizing/index.html" class="text-black fs-6"
+                    >Position</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../spacing/index.html" class="text-black fs-6"
+                    >Spacing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Text/index.html" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../buttons/index.html" class="text-black fs-6"
+                    >Buttons</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../card/index.html" class="text-black fs-6">Card</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Carousel/index.html" class="text-black fs-6"
+                    >Carousel</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Dropdown/index.html" class="text-black fs-6"
+                    >Dropdowns</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+
+              <!-- position ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h1>INPUT GROUPS</h1></span>
+                <p class="fw-ligt mt-3 fs-6 mb-4">
+Şimdilik 2 adet klasik Register ve Login yapılarımız sizlerle.
+                </p>
+                <p class="text-black fs-4 pb-3">#Basit Örnek</p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                        <div class="input-group">
+                        <label for="" class="input-group-text">@</label>
+                        <input type="text" class="form details w-100">
+                        </div>
+                                                            
+                        <div class="input-group">
+                        <input type="text" class="form details w-100">
+                        <label for="" class="input-group-text">@example.com</label>
+                        </div>
+                                                            
+                        <div class="input-group">
+                        <label for="" class="input-group-text">https://Neos.com/users/</label>
+                        <input type="text" class="form details w-100">
+                        </div>
+                                                            
+                        <div class="input-group">
+                        <input type="text" class="form details w-100">
+                        <label for="" class="input-group-text">@</label>
+                        <input type="text" class="form details">
+                        </div>
+
+
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">""</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;@<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"form details"</span><span class="mark"></span>&gt;
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"form details"</span><span class="mark"></span>&gt;
+  <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">""</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;@example.com<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">""</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;https://Neos.com/users/<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"form details"</span><span class="mark"></span>&gt;<span class="mark">
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"form details"</span><span class="mark"></span>&gt;
+  <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">""</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;@<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"> <span class="ticket">class=</span><span class="attr">"form details"</span><span class="mark"></span>&gt;
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="main">
+                <div class="main-item">
+                  <p class="text-black fs-3 pb-3">#Multiple inputs</p>
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+<div class="input-group">
+<label for="" class="input-group-text">İsim ve Soyisim</label>
+<input type="text" class="form-details" placeholder="isim">
+<input type="text" class="form-details" placeholder="Soyisim">
+</div>
+                      </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">""</span><span class="mark"><span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;</span>İsim ve soyisim<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text</span><span class="mark"><span class="ticket">class=</span><span class="attr">"form-details"</span><span class="ticket">placeholder=</span><span class="attr">"Soyisim"</span><span class="mark"></span>&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="main">
+                <div class="main-item">
+                  <p class="text-black fs-3 pb-3">#Add Button</p>
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div class="input-group">
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      <input type="text" class="form-details" placeholder="isim">
+                      </div>
+                                                          
+                      <div class="input-group">
+                      <input type="text" class="form-details" placeholder="isim">
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      </div>
+                                                          
+                      <div class="input-group">
+                      <input type="text" class="form-details" placeholder="isim">
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      </div>
+                                                          
+                      <div class="input-group">
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      <input type="text" class="form-details" placeholder="isim">
+                      </div>
+                            
+                      </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">class=</span><span class="attr">"form-details"</span><span class="mark"></span>&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">class=</span><span class="attr">"form-details"</span><span class="mark"></span>&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">class=</span><span class="attr">"form-details"</span><span class="mark"></span>&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">class=</span><span class="attr">"form-details"</span><span class="mark"></span>&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="main">
+                <div class="main-item">
+                  <p class="text-black fs-3 pb-3">#Multiple addons</p>
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                      <div class="input-group">
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      <label for="" class="input-group-text">@</label>
+                      <input type="text" class="form-details" placeholder="isim">
+                      </div>
+                                                          
+                      <div class="input-group">
+                      <input type="text" class="form-details" placeholder="isim">
+                      <label for="" class="input-group-text">@</label>
+                      <button class="btn btn-neosblue"type="button">Button</button>
+                      </div>
+                      </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">""</span><span class="mark"><span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;</span>@<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">class=</span><span class="attr">"form-details"</span><span class="mark"></span>&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">input type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">class=</span><span class="attr">"form-details"</span><span class="mark"></span>&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">label for=</span><span class="attr">""</span><span class="mark"><span class="ticket">class=</span><span class="attr">"input-group-text"</span><span class="mark"></span>&gt;</span>@<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">label</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn btn-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"button"</span><span class="mark"></span>&gt;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>

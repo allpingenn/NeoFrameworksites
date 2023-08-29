@@ -46,7 +46,7 @@ body{
 
 
 
-        /* içerikkk */
+        /* iÃ§erikkk */
         .main{
             padding: 1rem;
         }
@@ -87,7 +87,7 @@ body{
             border-radius: 5px;
         }
 
-        /* site içerisindeki border için */
+        /* site iÃ§erisindeki border iÃ§in */
         .border-genel-container {
         display: flex;
         gap: 1rem;
@@ -102,7 +102,7 @@ body{
         .view{
             max-width: 100%;
         }
-        /* kopyala yapıştır için html bölgemiz*/
+        /* kopyala yapÄ±ÅŸtÄ±r iÃ§in html bÃ¶lgemiz*/
         .kapsayici{
         display: flex;
         flex-direction: column;
@@ -112,6 +112,15 @@ body{
         background-color:#F8F9FA;
         display: flex;
         justify-content: space-between;
+        }
+        select {
+            width: 25%;
+            height: 25px;
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
         }
         .logo-sidebar img {
             width: 140px;

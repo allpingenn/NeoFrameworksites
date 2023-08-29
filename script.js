@@ -23,5 +23,4 @@ copyButtons.forEach(button => {
   });
 });
 
-// DOCS
 

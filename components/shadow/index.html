@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>position</title>
+    <title>Shadow</title>
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -103,7 +103,7 @@
                   >
                 </li>
                 <li class="pb-3">
-                  <a href="../position/index.html" class="text-black fs-6"
+                  <a href="../sizing/index.html" class="text-black fs-6"
                     >Position</a
                   >
                 </li>
@@ -152,28 +152,27 @@
 
           <div class="content-container">
             <div id="content">
-              <!-- position ÖZELLİKLERİ -->
+              <!-- Shadow ÖZELLİKLERİ -->
               <div class="main">
-                <span class="text-neosblue mt-5"><h1>Position</h1></span>
-                <p class="fw-ligt mt-3 fs-6 mb-4">
-                  Position özelliği, bir HTML öğesinin sayfa içindeki konumunu
-                  belirlemek için kullanılır. Bu özellik, web sayfalarında
-                  öğelerin diğer öğelerle nasıl yerleştirileceğini ve
-                  konumlandırılacağını kontrol etmek için kullanılır.
-                </p>
+                <span class="text-neosblue mt-5"><h1>Shadow</h1></span>
+                <p class="fw-ligt mt-3 fs-6">shadow özellikleri</p>
                 <div class="main-item">
-                  <div class="main-title"></div>
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">Additive</p>
+                  </div>
                   <div class="main-border">
-                    <div class="main-bottom position-relative"></div>
+                    <div class="main-bottom position-relative d-flex">
+                      <div class="border-genel shadow-sm me-4"></div>
+                      <div class="border-genel shadow-md me-4"></div>
+                      <div class="border-genel shadow-lg me-2"></div>
+                    </div>
 
                     <div class="kapsayici">
                       <pre class="main-code fs-5 p-2">
                             <code >
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-static"</span><span class="mark">&gt;</span>position-static<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-relative"</span><span class="mark">&gt;</span>position-relative<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-absolute"</span><span class="mark">&gt;</span>position-absolute<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-sticky"</span><span class="mark">&gt;</span>position-sticky<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-fixed"</span><span class="mark">&gt;</span>position-fixed<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"shadow-sm"</span><span class="mark">&gt;</span>Shadow<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"shadow-md"</span><span class="mark">&gt;</span>Shadow<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"shadow-lg"</span><span class="mark">&gt;</span>Shadow<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
                         </code>
                           </pre>
                       <div class="main-html d-flex pt-2 p-2">

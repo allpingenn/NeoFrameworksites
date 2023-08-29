@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register ve login</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR -->
+        <div
+          class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
+        >
+          <a class="logo-sidebar" href="../../index.html"
+            ><img src="../../img/neos-logo.png" alt=""
+          /></a>
+          <ul class="w-100 ps-5">
+            <li class="fs-5 p-2">
+              <i class="neo-diagram-purple w-7"></i>
+              Customize
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../colors/index.html" class="text-black fs-6"
+                    >Color</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../shadow/index.html" class="text-black fs-6"
+                    >Shadow</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-box-neon w-7"></i>
+              Layout
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../containers/index.html" class="text-black fs-6"
+                    >Containers</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-form-blue w-7"></i>
+              Forms
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../select/index.html" class="text-black fs-6"
+                    >Select</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Checks-radios/index.html" class="text-black fs-6"
+                    >Check & Radios</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a
+                    href="./index.html"
+                    class="text-black fs-6"
+                    >Register & Login</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../input-group/index.html" class="text-black fs-6"
+                    >Input Groups</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="fs-5 p-2">
+              <i class="neo-arrow-up-right w-7"></i>
+              Functions
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../border/index.html" class="text-black fs-6">Border</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../display/index.html" class="text-black fs-6"
+                    >Display</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../sizing/index.html" class="text-black fs-6"
+                    >Sizing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../sizing/index.html" class="text-black fs-6"
+                    >Position</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../spacing/index.html" class="text-black fs-6"
+                    >Spacing</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Text/index.html" class="text-black fs-6">Text</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fs-6 p-2">
+              <i class="neo-server-brown w-7"></i>
+              Components
+              <ul class="ps-4 pt-3">
+                <li class="pb-3">
+                  <a href="../buttons/index.html" class="text-black fs-6"
+                    >Buttons</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../card/index.html" class="text-black fs-6">Card</a>
+                </li>
+                <li class="pb-3">
+                  <a href="../Carousel/index.html" class="text-black fs-6"
+                    >Carousel</a
+                  >
+                </li>
+                <li class="pb-3">
+                  <a href="../Dropdown/index.html" class="text-black fs-6"
+                    >Dropdowns</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="fs-6 p-2">About</li>
+            <li class="fs-6 p-2">SSS</li>
+            <li class="fs- p-2">Contact</li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!--? İÇERİK KISMI  -->
+
+          <div class="content-container">
+            <div id="content">
+
+              <!-- position ÖZELLİKLERİ -->
+              <div class="main">
+                <span class="text-neosblue mt-5"><h1>REGISTER LOGIN FORM</h1></span>
+                <p class="fw-ligt mt-3 fs-6 mb-4">
+Şimdilik 2 adet klasik Register ve Login yapılarımız sizlerle.
+                </p>
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+
+                  <form class="register">
+                  <h2>Register Form<h2>
+                  <div class="input-group" style="margin-bottom: 10px">
+                  <span class="input-group-text"><i class="register-icon"></i></span>
+                  <input class="input-register form-details" type="text" placeholder="Username" name="usrnm"/>
+                  </div>
+                  <div class="input-group" style="margin-bottom: 10px">
+                  <span class="input-group-text"><i class="register-icon"></i></span>
+                  <input class="input-register form-details" type="text" placeholder="Email" name="email"/>
+                  </div>
+                  <div class="input-group" style="margin-bottom: 10px">
+                  <span class="input-group-text"><i class="register-icon"></i></span>
+                  <input class="input-register form-details" type="password" placeholder="Password" name="psw"/>
+                  </div>
+                  <button type="submit" class="btn form-details bg-neosblue">Register</button>
+                  </form>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"register"</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark"></span><span class="ticket">h2</span><span class="mark">&gt;</span><span class="mark">Register form&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark"> <span class="ticket">style=</span><span class="attr">"margin-bottom: 10px"</span><span class="mark"></span>&gt;
+<span class="mark">&lt;</span><span class="ticket">span class=</span><span class="attr">"input-group-text"</span><span class="mark">&gt;<span class="mark">&lt;</span><span class="ticket">i class=</span><span class="attr">"register-icon"</span><span class="mark">&gt;&lt;<span class="ticket">/i</span>&gt;<span class="ticket">/span</span>&gt;
+<span class="mark">&lt;</span><span class="ticket">input class=</span><span class="attr">"input-register form-details"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">placeholder=</span><span class="attr">"Username"</span><span class="ticket">name=</span><span class="attr">"usrnm"</span></span>&gt;
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark"> <span class="ticket">style=</span><span class="attr">"margin-bottom: 10px"</span><span class="mark"></span>&gt;
+<span class="mark">&lt;</span><span class="ticket">span class=</span><span class="attr">"input-group-text"</span><span class="mark">&gt;<span class="mark">&lt;</span><span class="ticket">i class=</span><span class="attr">"register-icon"</span><span class="mark">&gt;&lt;<span class="ticket">/i</span>&gt;<span class="ticket">/span</span>&gt;
+<span class="mark">&lt;</span><span class="ticket">input class=</span><span class="attr">"input-register form-details"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">placeholder=</span><span class="attr">"Email"</span><span class="ticket">name=</span><span class="attr">"email"</span></span>&gt;
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark"> <span class="ticket">style=</span><span class="attr">"margin-bottom: 10px"</span><span class="mark"></span>&gt;
+<span class="mark">&lt;</span><span class="ticket">span class=</span><span class="attr">"input-group-text"</span><span class="mark">&gt;<span class="mark">&lt;</span><span class="ticket">i class=</span><span class="attr">"register-icon"</span><span class="mark">&gt;&lt;<span class="ticket">/i</span>&gt;<span class="ticket">/span</span>&gt;
+<span class="mark">&lt;</span><span class="ticket">input class=</span><span class="attr">"input-register form-details"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"password"</span><span class="mark"><span class="ticket">placeholder=</span><span class="attr">"Password"</span><span class="ticket">name=</span><span class="attr">"psw"</span></span>&gt;
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn form-details bg-neosblue"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"submit"</span>&gt;Register<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">form</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                  </div>
+                  <div class="main-border">
+                    <div class="main-bottom position-relative">
+                        <div class="login-form p-4 ">
+                          <div class="login-container">
+                            <h2>Login</h2>
+                            <form>
+                              <div class="input-group">
+                                <div class="input-group-text ">@</div>
+                                <input type="text" placeholder="Email" class="form-details" name="email" required>
+                              </div>
+                              <div class="input-group">
+                                <div class="input-group-text" id="password-icon"  onclick="togglePasswordVisibility()" style="padding: 7.4px">🔒</div>
+                                <input type="password" placeholder="Password" class="form-details" name="password" required>
+                              </div>
+                              <button type="submit" class="login-btn">Login</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"login-form"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"login-container"</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="mark"></span><span class="ticket">h2</span><span class="mark">&gt;</span><span class="mark">Login&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">form</span><span class="mark">&gt;
+      <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+      <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group-text"</span><span class="mark">&gt;</span>@ &lt;<span class="ticket">div</span><span class="mark">&gt;
+      <span class="mark">&lt;</span><span class="ticket">input class=</span><span class="attr">"form-details"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"text"</span><span class="mark"><span class="ticket">placeholder=</span><span class="attr">"Email"</span><span class="ticket">name=</span><span class="attr">"email"</span> <span class="ticket">required</span></span>&gt;
+    <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+  <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group"</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"input-group-text" id="password-icon"  onclick="togglePasswordVisibility()" style="padding: 7.4px"</span><span class="mark">&gt;</span>🔒<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">input class=</span><span class="attr">"form-details"</span><span class="mark"><span class="ticket">type=</span><span class="attr">"password"</span><span class="mark"><span class="ticket">placeholder=</span><span class="attr">"Password"</span><span class="ticket">name=</span><span class="attr">"password"</span> <span class="ticket">required</span></span>&gt;
+    <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+    <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"login-btn"</span><span class="ticket">type=</span><span class="attr">"submit"</span><span class="mark">&gt;</span>login<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">form</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+  </body>
+</html>

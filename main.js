@@ -299,70 +299,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// ---- CAROUSEL1 ----
-    const gap = 50;
-    const carousel = document.getElementById("slider-carousel"),
-      content = document.getElementById("slider-content"),
-      next = document.getElementById("next"),
-      prev = document.getElementById("prev");
-    
-    next.addEventListener("click", e => {
-      carousel.scrollBy(width + gap, 0);
-      if (carousel.scrollWidth !== 0) {
-        prev.style.display = "flex";
-      }
-      if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-        next.style.display = "none";
-      }
-    });
-    prev.addEventListener("click", e => {
-      carousel.scrollBy(-(width + gap), 0);
-      if (carousel.scrollLeft - width - gap <= 0) {
-        prev.style.display = "none";
-      }
-      if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-        next.style.display = "flex";
-      }
-    });
-    
-    let width = carousel.offsetWidth;
-    window.addEventListener("resize", e => (width = carousel.offsetWidth));
-
-
-
-        // ----- CAROUSEL2 -----
-  "use strict";
-  var _slayt = document.getElementsByClassName("slides");
-  var slaytSayisi = _slayt.length;
-  var slaytNo = 0;
-  var i = 0;
-
-  slaytGoster(slaytNo);
-
-  function nextSlide() {
-    slaytNo++;
-    slaytGoster(slaytNo);
-  }
-
-  function previousSlide() {
-    slaytNo--;
-    slaytGoster(slaytNo);
-  }
-
-  function slaytGoster(slaytNumarasi) {
-    slaytNo = slaytNumarasi;
-
-    if (slaytNumarasi >= slaytSayisi) slaytNo = 0;
-
-    if (slaytNumarasi < 0) slaytNo = slaytSayisi - 1;
-
-    for (i = 0; i < slaytSayisi; i++) {
-      _slayt[i].style.display = "none";
-    }
-
-    _slayt[slaytNo].style.display="block";
-
-}
 // Login içi script
 function togglePasswordVisibility() {
   var passwordInput = document.querySelector('input[name="password"]');
@@ -376,107 +312,32 @@ function togglePasswordVisibility() {
     icon.innerHTML = "🔒";
   }
 }
-//! DATA TARGET DENEMELERİ -SEARCH NAVBAR
-
-document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.querySelector('.menu-icon');
-    const searchBtn = document.querySelector('.search-icon');
-    const cancelBtn = document.querySelector('.cancel-icon');
-  
-    menuBtn.onclick = () => {
-      const targetId = menuBtn.dataset.target;
-      const targetElement = document.getElementById(targetId);
-  
-      targetElement.classList.toggle('active');
-      menuBtn.classList.toggle('hide');
-      searchBtn.classList.toggle('hide');
-      cancelBtn.classList.toggle('show');
-    };
-  
-    cancelBtn.onclick = () => {
-      const targetId = cancelBtn.dataset.target;
-      const targetElement = document.getElementById(targetId);
-  
-      targetElement.classList.remove('active');
-      menuBtn.classList.remove('hide');
-      searchBtn.classList.remove('hide');
-      cancelBtn.classList.remove('show');
-      targetElement.classList.remove('active');
-      cancelBtn.style.color = 'primary';
-    };
-  
-    searchBtn.onclick = () => {
-      const targetId = searchBtn.dataset.target;
-      const targetElement = document.getElementById(targetId);
-  
-      targetElement.classList.toggle('active');
-      searchBtn.classList.toggle('hide');
-      cancelBtn.classList.toggle('show');
-    };
-  });
-  
-/* ------ ---------------- ------- */
-/* ------ Akordiyon Yapısı ------- */
-
-
-const gizlibolumler = document.querySelectorAll(".accordion");
-
-gizlibolumler.forEach((oge) => {
-  oge.addEventListener("click", () => {
-    const acik = document.querySelector(oge.dataset.target);
-    const icon = document.querySelector(oge.dataset.icon);
-
-    // .panel-active sınıfını toggle etmek için contains, remove ve add kullanımı
-    if (acik.classList.contains("panel-active")) {
-      acik.classList.remove("panel-active");
-      // .rotate sınıfını 0.4 saniye sonra kaldır
-      setTimeout(() => {
-        icon.classList.remove("rotate");
-      }, 75);
-    } else {
-      acik.classList.add("panel-active");
-      icon.classList.add("rotate");
-    }
-  });
-});
-
-/* ------ -------------------- ------- */
-/* ------ Akordiyon Yapısı SON ------- */
 
 /* ------ MODAL POPUP ------- */
 document.addEventListener("DOMContentLoaded", function () {
-    const btns = document.querySelectorAll("[data-target]");
-  
-    // Tüm data-target ögelerine tıklama olayı ekle
-    btns.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        const targetId = btn.getAttribute("data-target");
-        const popup = document.getElementById(targetId);
-  
-        // Body elementini seçelim
-        const body = document.querySelector("body");
-  
-        if (popup.style.visibility === "visible") {
-          popup.style.transform = "translate(-50%, -50%) scale(0.1)";
-          popup.style.visibility = "hidden";
-  
-          // Popup kapandığında overlay'i kaldırarak arkaplanı eski haline getir
-          body.style.backgroundColor = "transparent";
-        } else {
-          popup.style.visibility = "visible";
-          popup.style.transform = "translate(-50%, -50%) scale(1)";
-  
-          // Popup açıldığında overlay'i ekleyerek arkaplanı yarı saydam karanlık yap
-          body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-        }
-      });
+  const btns = document.querySelectorAll("[data-target]");
+  // Tüm data-target ögelerine tıklama olayı ekle
+  btns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const targetId = btn.getAttribute("data-target");
+      const popup = document.getElementById(targetId);
+
+      // Body elementini seçelim
+      const body = document.querySelector("body");
+
+      if (popup.style.visibility === "visible") {
+        popup.style.transform = "translate(-50%, -50%) scale(0.1)";
+        popup.style.visibility = "hidden";
+
+        // Popup kapandığında overlay'i kaldırarak arkaplanı eski haline getir
+        body.style.backgroundColor = "transparent";
+      } else {
+        popup.style.visibility = "visible";
+        popup.style.transform = "translate(-50%, -50%) scale(1)";
+
+        // Popup açıldığında overlay'i ekleyerek arkaplanı yarı saydam karanlık yap
+        body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+      }
     });
   });
-// Window popup
-  let window_url = document.getElementById('window-url')
-
-document.getElementById('openButton').addEventListener('click', function () {
-
-  window.open(window_url.innerHTML, 'YeniPencere', 'width=1920,height=1080');
-
-}); 
+});
