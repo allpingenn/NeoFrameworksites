@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>position</title>
-    <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="../../style.css"/>
+    <link rel="stylesheet" href="./styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -103,7 +103,7 @@
                   >
                 </li>
                 <li class="pb-3">
-                  <a href="../position/index.html" class="text-black fs-6"
+                  <a href="../sizing/index.html" class="text-black fs-6"
                     >Position</a
                   >
                 </li>
@@ -135,14 +135,10 @@
                   >
                 </li>
                 <li class="pb-3">
-                  <a href="../Modal/index.html" class="text-black fs-6"
-                    >Modals</a
-                  >
+                  <a href="../Modal/index.html" class="text-black fs-6">Modals</a>
                 </li>
                 <li class="pb-3">
-                  <a href="../Accordion/index.html" class="text-black fs-6"
-                    >Accordion</a
-                  >
+                  <a href="./index.html" class="text-black fs-6">Accordion</a>
                 </li>
                 <li class="pb-3">
                   <a href="../Dropdown/index.html" class="text-black fs-6"
@@ -165,28 +161,60 @@
 
           <div class="content-container">
             <div id="content">
-              <!-- position ÖZELLİKLERİ -->
+
+              <!-- BORDER ÖZELLİKLERİ -->
               <div class="main">
-                <span class="text-neosblue mt-5"><h1>Position</h1></span>
-                <p class="fw-ligt mt-3 fs-6 mb-4">
-                  Position özelliği, bir HTML öğesinin sayfa içindeki konumunu
-                  belirlemek için kullanılır. Bu özellik, web sayfalarında
-                  öğelerin diğer öğelerle nasıl yerleştirileceğini ve
-                  konumlandırılacağını kontrol etmek için kullanılır.
+                <span class="text-neosblue mt-5"><h1>Accordion</h1></span>
+                <p class="fw-ligt mt-3 fs-6">
+Belirli ögelerin kalınlığını ve kenarlık yarıçapını kolayca biçimlendirmek için kenarlık programları verilmektedir.Verilen bu özellikler projelerimizde katkı sağlayacaktır. Verilen kenarlık özelliklerinde hepsini veya birini kullanarak kullanabilirsiniz.
                 </p>
                 <div class="main-item">
-                  <div class="main-title"></div>
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      #Additive
+                    </p>
+                  </div>
                   <div class="main-border">
-                    <div class="main-bottom position-relative"></div>
+                    <div class="main-bottom position-relative  ">
+                        <div>
+                          <button class="accordion">Section 1</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
+
+                          <button class="accordion">Section 2</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
+
+                          <button class="accordion">Section 3</button>
+                          <div class="panel">
+                            <p>Lorem ipsum...</p>
+                          </div>
+                        </div>
+                    </div>
 
                     <div class="kapsayici">
                       <pre class="main-code fs-5 p-2">
                             <code >
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-static"</span><span class="mark">&gt;</span>position-static<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-relative"</span><span class="mark">&gt;</span>position-relative<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-absolute"</span><span class="mark">&gt;</span>position-absolute<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-sticky"</span><span class="mark">&gt;</span>position-sticky<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"position-fixed"</span><span class="mark">&gt;</span>position-fixed<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div</span>&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"accordion"</span><span class="mark">&gt;</span>Section 1<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"panel"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">p</span><span class="attr"></span><span class="mark">&gt;</span>Lorem ipsum...<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"accordion"</span><span class="mark">&gt;</span>Section 2<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"panel"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">p</span><span class="attr"></span><span class="mark">&gt;</span>Lorem ipsum...<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+  <span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"accordion"</span><span class="mark">&gt;</span>Section 3<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"panel"</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="ticket">p</span><span class="attr"></span><span class="mark">&gt;</span>Lorem ipsum...<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+  <span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+
                         </code>
                           </pre>
                       <div class="main-html d-flex pt-2 p-2">
@@ -205,6 +233,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

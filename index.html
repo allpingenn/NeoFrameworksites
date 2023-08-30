@@ -34,6 +34,26 @@
           <li>
             <a href="./components/colors/index.html" class="fs-6 pe-5">Docs</a>
           </li>
+          <li>
+            <button
+              id="modeButton"
+              class="switch-button"
+              style="
+                width: 40px;
+                height: 20px;
+                border: none;
+                border-radius: 34px;
+              "
+            >
+              <label class="switch">
+                <input type="checkbox" id="modeSwitch" />
+                <span class="slider round">
+                  <span class="mode-icon-light" id="modeIcon">&#9728;</span>
+                  <span class="mode-icon-dark">&#9789;</span>
+                </span>
+              </label>
+            </button>
+          </li>
         </ul>
         <!-- hamburger -->
         <!-- <div class="menu-toggle d-none">
@@ -49,9 +69,10 @@
         </p>
         <a
           href="./components/colors/index.html"
-          class="btn btn-black mb-3 mt-5 text-center p-2 px-5 pt-0"
-          ><span class="mx-auto" style="font-size: 14px">Başla</span></a
+          class="btn btn-black mb-3 mt-5 text-center p-2 py-3 px-5 pt-0 light-mode-btn"
+          ><span class="mx-auto" style="font-size: 18px">Başla</span></a
         >
+        <button class="btn btn-hover-4 mb-3 mt-5 p-3">Başla</button>
       </div>
     </div>
     <!-- cdn copy content -->

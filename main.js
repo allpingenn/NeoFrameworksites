@@ -312,32 +312,58 @@ function togglePasswordVisibility() {
     icon.innerHTML = "🔒";
   }
 }
+// ACCORDION YAPISI
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
 
 /* ------ MODAL POPUP ------- */
 document.addEventListener("DOMContentLoaded", function () {
   const btns = document.querySelectorAll("[data-target]");
-  // Tüm data-target ögelerine tıklama olayı ekle
+  const popupTransitionDuration = 0.5; // Geçiş süresi (saniye cinsinden)
+
   btns.forEach(function (btn) {
     btn.addEventListener("click", function () {
       const targetId = btn.getAttribute("data-target");
       const popup = document.getElementById(targetId);
 
-      // Body elementini seçelim
       const body = document.querySelector("body");
 
       if (popup.style.visibility === "visible") {
         popup.style.transform = "translate(-50%, -50%) scale(0.1)";
         popup.style.visibility = "hidden";
-
-        // Popup kapandığında overlay'i kaldırarak arkaplanı eski haline getir
-        body.style.backgroundColor = "transparent";
+        body.style.backgroundColor = "";
       } else {
+        // Diğer pop-up'ları kapat
+        btns.forEach(function (otherBtn) {
+          const otherTargetId = otherBtn.getAttribute("data-target");
+          const otherPopup = document.getElementById(otherTargetId);
+          if (otherPopup && otherPopup.style.visibility === "visible") {
+            otherPopup.style.transform = "translate(-50%, -50%) scale(0.1)";
+            otherPopup.style.visibility = "hidden";
+          }
+        });
+
+        popup.style.transition = `transform ${popupTransitionDuration}s`;
         popup.style.visibility = "visible";
         popup.style.transform = "translate(-50%, -50%) scale(1)";
-
-        // Popup açıldığında overlay'i ekleyerek arkaplanı yarı saydam karanlık yap
-        body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        body.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
       }
     });
   });
 });
+
+
+

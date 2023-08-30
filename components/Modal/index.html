@@ -138,13 +138,21 @@
                   <a href="./index.html" class="text-black fs-6">Modals</a>
                 </li>
                 <li class="pb-3">
+                  <a href="../Accordion/index.html" class="text-black fs-6"
+                    >Accordion</a
+                  >
+                </li>
+                <li class="pb-3">
                   <a href="../Dropdown/index.html" class="text-black fs-6"
                     >Dropdowns</a
                   >
                 </li>
               </ul>
             </li>
-
+            <li class="fs-6 p-2">
+              <i class="neo-pen-ruler-red w-7"></i>
+              <a href="../Icons/index.html" class="text-black fs-6">Icons</a>
+            </li>
             <li class="fs-6 p-2">About</li>
             <li class="fs-6 p-2">SSS</li>
             <li class="fs- p-2">Contact</li>
@@ -179,15 +187,138 @@
                     <p class="mt-5 w-100 text-black fs-3 pb-4">#Olumlu Popup</p>
                   </div>
                   <div class="main-border">
-                    <div class="container-pop">
+                    <div class="container-pop m-5">
                       <button
                         type="submit"
                         class="btn-modal"
-                        data-target="popup"
+                        data-target="olumlu-popup"
                       >
                         Gönder
                       </button>
-                      <div class="popup" id="popup">
+                      <div class="popup" id="olumlu-popup">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="3 3 16 16"
+                        >
+                          <defs>
+                            <linearGradient
+                              gradientUnits="userSpaceOnUse"
+                              y2="-2.623"
+                              x2="0"
+                              y1="986.67"
+                              id="0"
+                            >
+                              <stop stop-color="#ffce3b" />
+                              <stop offset="1" stop-color="#ffd762" />
+                            </linearGradient>
+                            <linearGradient
+                              y2="-2.623"
+                              x2="0"
+                              y1="986.67"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#ffce3b" />
+                              <stop offset="1" stop-color="#fef4ab" />
+                            </linearGradient>
+                          </defs>
+                          <g
+                            transform="matrix(1.99997 0 0 1.99997-10.994-2071.68)"
+                            fill="#da4453"
+                          >
+                            <rect
+                              y="1037.36"
+                              x="7"
+                              height="8"
+                              width="8"
+                              fill="#32c671"
+                              rx="4"
+                            />
+                            <path
+                              d="m123.86 12.966l-11.08-11.08c-1.52-1.521-3.368-2.281-5.54-2.281-2.173 0-4.02.76-5.541 2.281l-53.45 53.53-23.953-24.04c-1.521-1.521-3.368-2.281-5.54-2.281-2.173 0-4.02.76-5.541 2.281l-11.08 11.08c-1.521 1.521-2.281 3.368-2.281 5.541 0 2.172.76 4.02 2.281 5.54l29.493 29.493 11.08 11.08c1.52 1.521 3.367 2.281 5.54 2.281 2.172 0 4.02-.761 5.54-2.281l11.08-11.08 58.986-58.986c1.52-1.521 2.281-3.368 2.281-5.541.0001-2.172-.761-4.02-2.281-5.54"
+                              fill="#fff"
+                              transform="matrix(.0436 0 0 .0436 8.177 1039.72)"
+                              stroke="none"
+                              stroke-width="9.512"
+                            />
+                          </g>
+                        </svg>
+                        <h2>Teşekkürler</h2>
+                        <p>Bilgileriniz başarıyla gönderildi.</p>
+                        <button
+                          type="button"
+                          data-target="olumlu-popup"
+                          class="olumlu-popup"
+                        >
+                          Tamam
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="kapsayici">
+                      <pre class="main-code fs-5 p-2">
+                            <code >
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-pop"</span><span class="mark">&gt;</span>
+&nbsp;<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn-modal"</span>&nbsp;<span class="ticket">type=</span><span class="attr">"submit"</span>&nbsp;<span class="ticket">data-target=</span><span class="attr">"olumlu-popup"</span><span class="mark">&gt;</span>Gönder<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"popup"</span>&nbsp;<span class="ticket">id=</span><span class="attr">"olumlu-popup"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">svg xmlns=</span><span class="attr">"http://www.w3.org/2000/svg"</span>&nbsp;<span class="ticket">viewBox=</span><span class="attr">"3 3 16 16"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">defs</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">linearGradient gradientUnits=</span><span class="attr">"userSpaceOnUse"</span>&nbsp;<span class="ticket">y2=</span><span class="attr">"-2.623"</span>&nbsp;<span class="ticket">x2=</span><span class="attr">"0"</span>&nbsp;<span class="ticket">y1=</span><span class="attr">"986.67"</span>&nbsp;<span class="ticket">id=</span><span class="attr">"0"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">stop stop-color=</span><span class="attr">"#ffce3b"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">stop stop-color=</span><span class="attr">"#ffd762"</span>&nbsp;<span class="ticket">offset=</span><span class="attr">"1"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">linearGradient</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">linearGradient gradientUnits=</span><span class="attr">"userSpaceOnUse"</span>&nbsp;<span class="ticket">y2=</span><span class="attr">"-2.623"</span>&nbsp;<span class="ticket">x2=</span><span class="attr">"0"</span>&nbsp;<span class="ticket">y1=</span><span class="attr">"986.67"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">stop stop-color=</span><span class="attr">"#ffce3b"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">stop stop-color=</span><span class="attr">"#fef4ab"</span>&nbsp;<span class="ticket">offset=</span><span class="attr">"1"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">linearGradient</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">defs</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">g transform=</span><span class="attr">"matrix(1.99997 0 0 1.99997-10.994-2071.68)"</span>&nbsp;<span class="ticket">fill=</span><span class="attr">"#da4453"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">rect y=</span><span class="attr">"1037.36"</span>&nbsp;<span class="ticket">x=</span><span class="attr">"7"</span>&nbsp;<span class="ticket">height=</span><span class="attr">"8"</span>&nbsp;<span class="ticket">width=</span><span class="attr">"8"</span>&nbsp;<span class="ticket">fill=</span><span class="attr">"#32c671"</span>&nbsp;<span class="ticket">rx=</span><span class="attr">"4"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">path d=</span><span class="attr">"m123.86 12.966l-11.08-11.08c-1.52-1.521-3.368-2.281-5.54-2.281-2.173 0-4.02.76-5.541 2.281l-53.45 53.53-23.953-24.04c-1.521-1.521-3.368-2.281-5.54-2.281-2.173 0-4.02.76-5.541 2.281l-11.08 11.08c-1.521 1.521-2.281 3.368-2.281 5.541 0 2.172.76 4.02 2.281 5.54l29.493 29.493 11.08 11.08c1.52 1.521 3.367 2.281 5.54 2.281 2.172 0 4.02-.761 5.54-2.281l11.08-11.08 58.986-58.986c1.52-1.521 2.281-3.368 2.281-5.541.0001-2.172-.761-4.02-2.281-5.54"</span>&nbsp;<span class="ticket">fill=</span><span class="attr">"#fff"</span>&nbsp;<span class="ticket">transform=</span><span class="attr">"matrix(.0436 0 0 .0436 8.177 1039.72)"</span>&nbsp;<span class="ticket">stroke=</span><span class="attr">"none"</span>&nbsp;<span class="ticket">stroke-width=</span><span class="attr">"9.512"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">g</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">svg</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">h2</span><span class="mark">&gt;</span>Teşekkürler<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">p</span><span class="mark">&gt;</span>Bilgileriniz başarıyla gönderildi.<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">button type=</span><span class="attr">"button"</span>&nbsp;<span class="ticket">data-target=</span><span class="attr">"olumlu-popup"</span><span class="mark">&gt;</span>Tamam<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
+                        </code>
+                          </pre>
+                      <div class="main-html d-flex pt-2 p-2">
+                        <p class="text-black fs-6 fw-normal mt-2">HTML</p>
+                        <div class="d-flex ms-auto">
+                          <button type="button" class="p-1">
+                            <img
+                              class="fa-copy w-30"
+                              src="../../img/copy-img.png"
+                              alt="copy"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- OLUMSUZ-POPUP ÖZELLİKLERİ -->
+              <div class="main">
+                <div class="main-item">
+                  <div class="main-title">
+                    <p class="mt-5 w-100 text-black fs-3 pb-4">
+                      #Olumsuz Popup
+                    </p>
+                  </div>
+                  <div class="main-border">
+                    <div class="container-pop m-5">
+                      <button
+                        type="submit"
+                        class="btn-modal"
+                        data-target="olumsuz-popup"
+                      >
+                        Gönder
+                      </button>
+                      <div class="popup" id="olumsuz-popup">
                         <svg
                           version="1.1"
                           id="Layer_1"
@@ -225,8 +356,8 @@
                         <p>Bilgileriniz Gönderilirken Bir Sorun Oluştu.</p>
                         <button
                           type="button"
-                          data-target="popup"
-                          class="olumsuz"
+                          data-target="olumsuz-popup"
+                          class="olumsuz-popup"
                         >
                           Tamam
                         </button>
@@ -236,15 +367,23 @@
                     <div class="kapsayici">
                       <pre class="main-code fs-5 p-2">
                             <code >
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-white bg-black"</span><span class="mark">&gt;</span>text-white<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-black"</span><span class="mark">&gt;</span>text-black<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-neosblue"</span><span class="mark">&gt;</span>text-neosblue<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-hot"</span><span class="mark">&gt;</span>text-hot<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-gray"</span><span class="mark">&gt;</span>text-gray<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-green"</span><span class="mark">&gt;</span>text-green<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-softorange"</span><span class="mark">&gt;</span>text-softorange<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span> 
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-yellow"</span><span class="mark">&gt;</span>text-yellow<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
-<span class="mark">&lt;</span><span class="ticket">p class=</span><span class="attr">"text-neos-neon"</span><span class="mark">&gt;</span>text-neos-neon<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"container-pop"</span><span class="mark">&gt;</span>
+&nbsp;<span class="mark">&lt;</span><span class="ticket">button class=</span><span class="attr">"btn-modal"</span>&nbsp;<span class="ticket">type=</span><span class="attr">"submit"</span>&nbsp;<span class="ticket">data-target=</span><span class="attr">"olumsuz-popup"</span><span class="mark">&gt;</span>Gönder<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">div class=</span><span class="attr">"popup"</span>&nbsp;<span class="ticket">id=</span><span class="attr">"olumsuz-popup"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">svg xmlns=</span><span class="attr">"http://www.w3.org/2000/svg"</span>&nbsp;<span class="ticket">viewBox=</span><span class="attr">"0 0 450 450"</span>&nbsp;<span class="ticket">xmlns:xlink=</span><span class="attr">"http://www.w3.org/1999/xlink"</span>&nbsp;<span class="ticket">enable-background=</span><span class="attr">"new 0 0 450 450"</span>&nbsp;<span class="ticket"> xml:space=</span><span class="attr">"preserve"</span>&nbsp;<span class="ticket">y=</span><span class="attr">"0px"</span>&nbsp;<span class="ticket">x=</span><span class="attr">"0px"</span>&nbsp;<span class="ticket">version=</span><span class="attr">"1.1"</span>&nbsp;<span class="ticket">id=</span><span class="attr">"Layer_1"</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">circle fill=</span><span class="attr">"#CC3333"</span>&nbsp;<span class="ticket">cx=</span><span class="attr">"225"</span>&nbsp;<span class="ticket">cy=</span><span class="attr">"225"</span>&nbsp;<span class="ticket">r=</span><span class="attr">"225"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">g</span></span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">line fill=</span><span class="attr">"#FFFFFF"</span>&nbsp;<span class="ticket">stroke=</span><span class="attr">"#FFFFFF"</span>&nbsp;<span class="ticket">stroke-width=</span><span class="attr">"70"</span>&nbsp;<span class="ticket">x1=</span><span class="attr">"106.742"</span>&nbsp;<span class="ticket">y1=</span><span class="attr">"110.083"</span>&nbsp;<span class="ticket">x2=</span><span class="attr">"343.258"</span>&nbsp;<span class="ticket">y2=</span><span class="attr">"346.599"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">line fill=</span><span class="attr">"#FFFFFF"</span>&nbsp;<span class="ticket">stroke=</span><span class="attr">"#FFFFFF"</span>&nbsp;<span class="ticket">stroke-width=</span><span class="attr">"70"</span>&nbsp;<span class="ticket">x1=</span><span class="attr">"106.742"</span>&nbsp;<span class="ticket">y1=</span><span class="attr">"346.599"</span>&nbsp;<span class="ticket">x2=</span><span class="attr">"343.258"</span>&nbsp;<span class="ticket">y2=</span><span class="attr">"110.084"</span>&nbsp;/<span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">g</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">svg</span><span class="mark">&gt;</span>
+
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">h2</span><span class="mark">&gt;</span>Hata!<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">h2</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">p</span><span class="mark">&gt;</span>Bilgileriniz Gönderilirken Bir Sorun Oluştu.<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">p</span><span class="mark">&gt;</span>
+&nbsp;&nbsp;&nbsp;<span class="mark">&lt;</span><span class="ticket">button type=</span><span class="attr">"button"</span>&nbsp;<span class="ticket">data-target=</span><span class="attr">"olumsuz-popup"</span>&nbsp;<span class="ticket">class=</span><span class="attr">"olumsuz-popup"</span><span class="mark">&gt;</span>Tamam<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">button</span><span class="mark">&gt;</span>
+&nbsp;<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+<span class="mark">&lt;</span><span class="mark">/</span><span class="ticket">div</span><span class="mark">&gt;</span>
+
                         </code>
                           </pre>
                       <div class="main-html d-flex pt-2 p-2">
