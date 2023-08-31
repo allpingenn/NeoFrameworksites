@@ -1176,7 +1176,7 @@ padding-bottom: auto !important;}
     flex-wrap: wrap;
   }
   /* NAVBAR ÖZELLİKLERİ */
-  .navbar{
+  /* .navbar{
       position: relative;
   }
   .navbar .navbar-logo a , .navbar .navbar-logo, .navbar .navbar-items,.navbar .navbar-items .navbar-item a,.navbar-items .navbar-item{
@@ -1218,7 +1218,7 @@ padding-bottom: auto !important;}
   .active-2{
       display: block !important ;
       text-align: end;
-  }
+  } */
   /* CARD YAPILARI  */
   /* 1.CARD YAPIMIZ */
   .card {
@@ -2553,7 +2553,7 @@ transition: all 0.3s ease;
   margin: auto;
 }
 /* ! search navbar css */
-*{
+/* *{
   margin: 0;
   padding: 0;
   outline: none;
@@ -2764,8 +2764,8 @@ nav .logo.space {
   nav .search-icon{
     margin: 0 10px;
     font-size:16px;
-  }
-}
+  } 
+} */
 /* ! Position Classes */
  .top-0 { top: 0; }
 .top-50 { top: 50%; transform: translateY(-50%); }
@@ -3068,7 +3068,6 @@ box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .btn-modal {
   padding: 10px 60px;
@@ -3126,7 +3125,7 @@ box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
   cursor: pointer;
 }
 .olumlu-popup {
-  background-color: #33C671;
+  background-color: #33C671 !important;
 }
 .olumsuz-popup {
   background-color: #CC3232 !important;
@@ -3545,4 +3544,57 @@ box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
   content: '';
   display: block;
   padding-top: 100%;
+}
+
+/* NAVBAR CSS */
+
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  width: 100% }
+.logo img {
+  max-width: 100px;
+  max-height: 100px;}
+.menu-toggle {
+  cursor: pointer;}
+.icon {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  transition: all 0.3s ease;}
+.nav-links {
+  gap: 20px; }
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;}
+.nav-links li a:hover {
+  color: lightgray;}
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: flex;}
+  .menu-toggle {
+    display: inline-block;
+    align-items: end !important;
+  }
+  .nav-links  {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #a60000;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px 0;}
+  ul li {
+    margin: 0px 25px;}
+  .navbar .active-nav .nav-links {
+    display: flex;}
+  .nav-links li {
+    margin-bottom: 5px;}
 }

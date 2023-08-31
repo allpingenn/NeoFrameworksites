@@ -50,4 +50,3 @@ const modeButton = document.getElementById("modeButton");
       modeIconLight.style.opacity = "0";
     }
   }
-

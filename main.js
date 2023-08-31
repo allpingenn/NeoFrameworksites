@@ -1,61 +1,6 @@
 
-// NAVBAR İÇİN
-// Kullanacağım dom yapılarının çağırılması
 
-const collapseItem = document.querySelector('.collapse-item')
-const navbar = document.querySelector('.navbar-logo')
-const menuBtn = document.querySelector('.collapse')
-console.log()
-if(navbar){
-  let media = navbar.offsetWidth + collapseItem.offsetWidth +200 + navbar.parentElement.parentElement.offsetWidth-navbar.parentElement.offsetWidth
-    if(media < 475){
-        media = 475
-    }
-    // eleman sayısına göre bir media quary belirledik  ! Mediaquarylist
-    const mediaQuery = window.matchMedia(`(max-width: ${media}px)`)
-   
-    
-    
-    // Belirlenen media quary'e göre navbar responsive fonksyonun oluşturulması
-    function responsiveNav(e) {
-        console.log(navbar.offsetWidth)
-        if (e.matches) {
-            collapseItem.classList.add('hidden-collapse')
-            menuBtn.style.display='block'
-        } else{
-            collapseItem.classList.remove('hidden-collapse')
-            menuBtn.style.display='none'
-            if(collapseItem.classList.contains('active-2')){
-                collapseItem.classList.remove('active-2')
-            }
-        }
-    }   
-    // fonksyonun çağırılması
-    window.addEventListener('resize',function(){
-        responsiveNav(mediaQuery) 
-        
-    })
-    //  icona tıkladığımızda collapse yapısının görünür olması için active clasının eklenmesi
-    menuBtn.addEventListener('click',function(){
-        collapseItem.classList.toggle('active-2')
-    })
-    // Tıklanan yer eğer collapse menu yada icon değilse collapse kısmının tekrar kapanması için
-    // composedPath bir dizi döndüyor tıkladığımız şeyden html e kadar
-    document.addEventListener('click',(e)=>{
-        if(
-            !e.composedPath().includes(menuBtn) &&
-            !e.composedPath().includes(collapseItem)){
-            collapseItem.classList.remove('active-2')
-        }
-    })  
-    // fonksyon sayfa ilk açıldığındada çağırılıyor
-    responsiveNav(mediaQuery)
-    
-}
-//OFFCANVAS NAVBAR-SİDEBAR
-      function openNav() { document.getElementById("mySidenav").classList.add("open");}
-        function closeNav() { document.getElementById("mySidenav").classList.remove("open");}
-  // İNPUT-GROUP İÇİN
+// İNPUT-GROUP İÇİN
 const inputGrup = document.querySelectorAll('.input-group');
 const fromDetails = document.querySelectorAll('.form-details ')
 const fromLastChild = document.querySelectorAll('.input-group');
@@ -233,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Bir sonraki slayda geçmek için kullanılan fonksiyon
     function moveToNextSlide() {
       currentPosition -= slideWidth;
-
+      console.log(currentPosition)
       // Slaytların sonuna ulaşıp ulaşmadığımızı kontrol ediyoruz
       if (currentPosition < -(totalSlides - 1) * slideWidth) {
         currentPosition = 0;
@@ -286,9 +231,6 @@ document.addEventListener("DOMContentLoaded", function () {
         sliderContent.style.transform = `translateX(${currentPosition}px)`;
         updateDots(); // Slayt değiştiğinde çizgileri güncelliyoruz
 
-        if (autoplayEnabled) {
-          startAutoplay(); // Manuel gezinti sonrası otomatik oynatmayı tekrar başlat
-        }
       });
     });
 
@@ -366,4 +308,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+// NAVBAR 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navbar = document.querySelector(".navbar");
+
+  menuToggle.addEventListener("click", function () {
+    navbar.classList.toggle("active-nav");
+  });
+
+  // Menüyü kapatmak için herhangi bir yere tıklamada
+  document.addEventListener("click", function (event) {
+    if (!navbar.contains(event.target)) {
+      navbar.classList.remove("active-nav");
+    }
+  });
+});
 
