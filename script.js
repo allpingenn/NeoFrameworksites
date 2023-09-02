@@ -50,3 +50,12 @@ const modeButton = document.getElementById("modeButton");
       modeIconLight.style.opacity = "0";
     }
   }
+
+// SIDEBAR 
+  
+function show() {
+  document.querySelector(".hamburger").classList.toggle("open");
+  document.querySelector(".navigation").classList.toggle("active");
+}
+
+

@@ -178,7 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Bir sonraki slayda geçmek için kullanılan fonksiyon
     function moveToNextSlide() {
       currentPosition -= slideWidth;
-      console.log(currentPosition)
       // Slaytların sonuna ulaşıp ulaşmadığımızı kontrol ediyoruz
       if (currentPosition < -(totalSlides - 1) * slideWidth) {
         currentPosition = 0;

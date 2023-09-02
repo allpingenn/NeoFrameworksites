@@ -2447,7 +2447,7 @@ transition: all 0.3s ease;
         .btn.btn-hover-4:hover::before,
         .btn.btn-hover-4:focus::before {
         opacity: 1;
-        transform: perspective(0.99626412551359rem) rotateX(40deg) scale(1.5, 0.6);
+        transform: perspective(0.99626412551359rem) rotateX(30deg) scale(1.5, 0.6);
         transition: transform 0.5s linear;
         }
 
@@ -3553,7 +3553,7 @@ box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
   padding: 10px 20px;
   width: 100% }
 .logo img {
-  max-width: 100px;
+  max-width: 120px;
   max-height: 100px;}
 .menu-toggle {
   cursor: pointer;}

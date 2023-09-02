@@ -9,11 +9,12 @@ body{
     background-repeat: no-repeat;
     height: max-content;
 }
+
 /* ---------------------------------------------------
             CONTENT STYLE
         ----------------------------------------------------- */
         .content-container {
-            width: 85%;
+            width: 100%;
             margin-left: 20%;
         }
 
@@ -24,30 +25,6 @@ body{
             transition: all 0.3s;
             
         }
-        .container-pop {
-            position: relative;
-        }
-
-        /* ---------------------------------------------------
-            MEDIAQUERIES
-        ----------------------------------------------------- */
-
-        
-        @media (max-width: 832px) {
-            .slide-container{
-                width: 30%;
-            }
-            .content-container{
-                width: 100%;
-            }
-            #content{
-                padding: 5px;
-            }
-        
-        }
-
-
-
 
         /* içerikkk */
         .main{
@@ -122,29 +99,112 @@ body{
             margin-left: 15px;
             margin-bottom: 5px;
           }
-          @media screen and (max-width:900px) {
-            .container-fluid .row .col-2 { width: 200px !important;
-          
-            }
-            .container-fluid .row .col-10 {
-              width: 60%;
-              transform: translateX(150px);
-            }
-            
+
+          /* SIDEBAR  */
+
+          .hamburger {
+            cursor: pointer;
           }
-          
-          @media screen and (max-width:500px) {
-            .container-fluid .row .col-2 {width: 160px !important;}
-            .container-fluid .row .col-10 {
-              transform: translateX(120px);
-            }
-            
+          .sidebar {
+            position: absolute;
           }
-          
-          @media screen and (max-width:350px) {
-            .container-fluid .row .col-2 {width: 140px !important;}
-            .container-fluid .row .col-10 {
-              transform: translateX(100px);
-            }
-            
+      
+          .navigation {
+            left: -500px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.956);
+            transition: 0.5s;
+            z-index: 999;
+            padding-top: 25px;
+            overflow-y: scroll;
           }
+      
+          .hamburger,
+          .bar {
+            position: fixed;
+            transition: 0.5s;
+          }
+      
+          .hamburger {
+            display: block;
+            top: 6%;
+            left: 30px;
+            width: 30px;
+            height: 30px;
+            transform: translateY(-50%);
+            border: 0;
+            background: 0 0;
+          }
+          .hamburger.open {
+            left: 200px;
+            transition: 0.5s;
+          }
+      
+          .bar {
+            top: 3px;
+            background: black;
+            width: 100%;
+            height: 4px;
+            transition: all 0.3s ease-in;
+          }
+      
+          #bar2 {
+            top: 11px;
+          }
+      
+          #bar3 {
+            top: 19px;
+          }
+      
+          .navigation.active {
+            left: 0;
+          }
+      
+          .hamburger.open #bar1 {
+            background-color: black;
+            transform: rotate(45deg) translate(6px, 5px);
+          }
+      
+          .hamburger.open #bar2 {
+            background-color: transparent;
+          }
+      
+          .hamburger.open #bar3 {
+            background-color: black;
+            transform: rotate(-45deg) translate(6px, -5px);
+          }
+
+         /* RESPONSIVE SIDEBAR  */
+
+         @media screen and (min-width:1000px) {
+            .hamburger {
+                display: none !important;
+            }
+         }
+         @media screen and (max-width:1000px) {
+            .navigation {
+                position: fixed;
+                width: 250px;
+            }
+            .col-2 {
+                width: 5% !important;
+            }
+            .content-container {
+                margin-left: 9% !important;
+            }
+         }
+         @media screen and (max-width:550px) {
+            .content-container {
+                margin-left: 15% !important;
+            }
+         }
+         @media screen and (max-width:420px) {
+            .navigation{
+                width: 100% !important;
+            }
+            .hamburger.open {
+                left: 80% !important;
+            }
+         }
+          
+

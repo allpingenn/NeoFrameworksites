@@ -21,147 +21,164 @@
         <div
           class="col-2 sidebar overflow-y-auto w-17 position-fixed top-0 left-0 bottom-0"
         >
-          <a class="logo-sidebar" href="../../index.html"
-            ><img src="../../img/neos-logo.png" alt=""
-          /></a>
-          <ul class="w-100 ps-5">
-            <li class="fs-5 p-2">
-              <i class="neo-diagram-purple w-7"></i>
-              Customize
-              <ul class="ps-4 pt-3">
-                <li class="pb-3">
-                  <a href="../colors/index.html" class="text-black fs-6"
-                    >Color</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../shadow/index.html" class="text-black fs-6"
-                    >Shadow</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="fs-5 p-2">
-              <i class="neo-box-neon w-7"></i>
-              Layout
-              <ul class="ps-4 pt-3">
-                <li class="pb-3">
-                  <a href="./index.html" class="text-black fs-6">Containers</a>
-                </li>
-                <li class="pb-3">
-                  <a href="../grid/index.html" class="text-black fs-6">Grid</a>
-                </li>
-              </ul>
-            </li>
-            <li class="fs-5 p-2">
-              <i class="neo-form-blue w-7"></i>
-              Forms
-              <ul class="ps-4 pt-3">
-                <li class="pb-3">
-                  <a href="../select/index.html" class="text-black fs-6"
-                    >Select</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../Checks-radios/index.html" class="text-black fs-6"
-                    >Check & Radios</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a
-                    href="../register-login-form/index.html"
-                    class="text-black fs-6"
-                    >Register & Login</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../input-group/index.html" class="text-black fs-6"
-                    >Input Groups</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="fs-5 p-2">
-              <i class="neo-arrow-up-right w-7"></i>
-              Functions
-              <ul class="ps-4 pt-3">
-                <li class="pb-3">
-                  <a href="../border/index.html" class="text-black fs-6"
-                    >Border</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../display/index.html" class="text-black fs-6"
-                    >Display</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../sizing/index.html" class="text-black fs-6"
-                    >Sizing</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../sizing/index.html" class="text-black fs-6"
-                    >Position</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../spacing/index.html" class="text-black fs-6"
-                    >Spacing</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../Text/index.html" class="text-black fs-6">Text</a>
-                </li>
-              </ul>
-            </li>
-            <li class="fs-6 p-2">
-              <i class="neo-server-brown w-7"></i>
-              Components
-              <ul class="ps-4 pt-3">
-                <li class="pb-3">
-                  <a href="../navbar/index.html" class="text-black fs-6"
-                    >Navbar</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../buttons/index.html" class="text-black fs-6"
-                    >Buttons</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../card/index.html" class="text-black fs-6">Card</a>
-                </li>
-                <li class="pb-3">
-                  <a href="../Carousel/index.html" class="text-black fs-6"
-                    >Carousel</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../Modal/index.html" class="text-black fs-6"
-                    >Modals</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../Accordion/index.html" class="text-black fs-6"
-                    >Accordion</a
-                  >
-                </li>
-                <li class="pb-3">
-                  <a href="../Dropdown/index.html" class="text-black fs-6"
-                    >Dropdowns</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="fs-6 p-2">
-              <i class="neo-pen-ruler-red w-7"></i>
-              <a href="../Icons/index.html" class="text-black fs-6">Icons</a>
-            </li>
-            <li class="fs-6 p-2">About</li>
-            <li class="fs-6 p-2">SSS</li>
-            <li class="fs- p-2">Contact</li>
-          </ul>
+          <div class="navigation">
+            <button class="hamburger" onclick="show()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </button>
+            <a class="logo-sidebar" href="../../index.html"
+              ><img src="../../img/neos-logo.png" alt=""
+            /></a>
+            <ul class="w-100 ps-5">
+              <li class="fs-5 p-2">
+                <i class="neo-diagram-purple w-7"></i>
+                Customize
+                <ul class="ps-4 pt-3">
+                  <li class="pb-3">
+                    <a href="../colors/index.html" class="text-black fs-6"
+                      >Color</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../shadow/index.html" class="text-black fs-6"
+                      >Shadow</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="fs-5 p-2">
+                <i class="neo-box-neon w-7"></i>
+                Layout
+                <ul class="ps-4 pt-3">
+                  <li class="pb-3">
+                    <a href="./index.html" class="text-black fs-6"
+                      >Containers</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../grid/index.html" class="text-black fs-6"
+                      >Grid</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="fs-5 p-2">
+                <i class="neo-form-blue w-7"></i>
+                Forms
+                <ul class="ps-4 pt-3">
+                  <li class="pb-3">
+                    <a href="../select/index.html" class="text-black fs-6"
+                      >Select</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a
+                      href="../Checks-radios/index.html"
+                      class="text-black fs-6"
+                      >Check & Radios</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a
+                      href="../register-login-form/index.html"
+                      class="text-black fs-6"
+                      >Register & Login</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../input-group/index.html" class="text-black fs-6"
+                      >Input Groups</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="fs-5 p-2">
+                <i class="neo-arrow-up-right w-7"></i>
+                Functions
+                <ul class="ps-4 pt-3">
+                  <li class="pb-3">
+                    <a href="../border/index.html" class="text-black fs-6"
+                      >Border</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../display/index.html" class="text-black fs-6"
+                      >Display</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../sizing/index.html" class="text-black fs-6"
+                      >Sizing</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../sizing/index.html" class="text-black fs-6"
+                      >Position</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../spacing/index.html" class="text-black fs-6"
+                      >Spacing</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../Text/index.html" class="text-black fs-6"
+                      >Text</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="fs-6 p-2">
+                <i class="neo-server-brown w-7"></i>
+                Components
+                <ul class="ps-4 pt-3">
+                  <li class="pb-3">
+                    <a href="../navbar/index.html" class="text-black fs-6"
+                      >Navbar</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../buttons/index.html" class="text-black fs-6"
+                      >Buttons</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../card/index.html" class="text-black fs-6"
+                      >Card</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../Carousel/index.html" class="text-black fs-6"
+                      >Carousel</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../Modal/index.html" class="text-black fs-6"
+                      >Modals</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../Accordion/index.html" class="text-black fs-6"
+                      >Accordion</a
+                    >
+                  </li>
+                  <li class="pb-3">
+                    <a href="../Dropdown/index.html" class="text-black fs-6"
+                      >Dropdowns</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="fs-6 p-2">
+                <i class="neo-pen-ruler-red w-7"></i>
+                <a href="../Icons/index.html" class="text-black fs-6">Icons</a>
+              </li>
+              <li class="fs-6 p-2">About</li>
+              <li class="fs-6 p-2">SSS</li>
+              <li class="fs- p-2">Contact</li>
+            </ul>
+          </div>
         </div>
         <div class="col-10">
           <!--? İÇERİK KISMI  -->
