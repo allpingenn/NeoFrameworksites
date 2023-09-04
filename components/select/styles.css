@@ -136,7 +136,7 @@ body{
           .hamburger {
             display: block;
             top: 6%;
-            left: 30px;
+            left: 6%;
             width: 30px;
             height: 30px;
             transform: translateY(-50%);
