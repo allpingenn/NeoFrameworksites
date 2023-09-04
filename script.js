@@ -24,13 +24,14 @@ copyButtons.forEach(button => {
 });
 
 // DARK MODE 
+//hasankesil
 
 const modeButton = document.getElementById("modeButton");
   const modeSwitch = document.getElementById("modeSwitch");
   const modeIconLight = document.querySelector(".mode-icon-light");
 
   // Sayfa yüklendiğinde varsayılan olarak light mode'u aktif etmek için
-  modeSwitch.checked = false;
+  // modeSwitch.checked = false;
   handleModeChange();
 
   modeButton.addEventListener("click", () => {

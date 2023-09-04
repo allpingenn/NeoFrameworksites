@@ -132,6 +132,7 @@ body{
             width: 30px;
             height: 30px;
             transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
             border: 0;
             background: 0 0;
           }
@@ -146,6 +147,7 @@ body{
             width: 100%;
             height: 4px;
             transition: all 0.3s ease-in;
+            -webkit-transition: all 0.3s ease-in;
           }
       
           #bar2 {
@@ -163,6 +165,7 @@ body{
           .hamburger.open #bar1 {
             background-color: black;
             transform: rotate(45deg) translate(6px, 5px);
+            -webkit-transform: rotate(45deg) translate(6px, 5px);
           }
       
           .hamburger.open #bar2 {
@@ -172,6 +175,7 @@ body{
           .hamburger.open #bar3 {
             background-color: black;
             transform: rotate(-45deg) translate(6px, -5px);
+            -webkit-transform: rotate(-45deg) translate(6px, -5px);
           }
 
          /* RESPONSIVE SIDEBAR  */
@@ -206,5 +210,3 @@ body{
                 left: 80% !important;
             }
          }
-          
-

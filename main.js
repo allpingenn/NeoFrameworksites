@@ -306,23 +306,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
 // NAVBAR 
-
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const navbar = document.querySelector(".navbar");
 
   menuToggle.addEventListener("click", function () {
-    navbar.classList.toggle("active-nav");
+    navbar.classList.toggle("active-2");
   });
 
   // Menüyü kapatmak için herhangi bir yere tıklamada
   document.addEventListener("click", function (event) {
     if (!navbar.contains(event.target)) {
-      navbar.classList.remove("active-nav");
+      navbar.classList.remove("active-2");
     }
   });
 });
