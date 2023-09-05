@@ -4,7 +4,9 @@ const copyButtons = document.querySelectorAll(".fa-copy");
 copyButtons.forEach(button => {
   button.addEventListener("click", function() {
     // Tıklanan düğmenin içindeki <code> öğesinin içeriğini al
-    const codeContent = this.parentElement.querySelector("code").textContent;
+    // const codeContent = this.parentElement.querySelector("code").textContent;
+    const container = this.closest(".kapsayici");
+    const codeContent = container.querySelector("code").textContent;
 
     // Geçici bir input oluştur, kopyalanacak bağlantıyı içine koy
     const tempInput = document.createElement("input");
