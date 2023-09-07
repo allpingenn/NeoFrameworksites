@@ -1,9 +1,9 @@
-/* site cssi */
+/* FONT FAMILY TIPLERI COMPONENTS ACCORDION ICERISINDEN DENEYEBILIRSIINZ */
+
 *{
 font-family: 'Agdasima', sans-serif;
 font-family: 'Inter', sans-serif;
 transition: background-color 0.5s, color 0.5s;
-
 }
 body{
     margin: 0;
@@ -473,5 +473,3 @@ input:checked+.slider .mode-icon-dark {
    }
 
 }
-
-

@@ -1,5 +1,3 @@
-
-
 // İNPUT-GROUP İÇİN
 const inputGrup = document.querySelectorAll('.input-group');
 const fromDetails = document.querySelectorAll('.form-details ')
